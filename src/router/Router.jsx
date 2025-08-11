@@ -5,6 +5,7 @@ import About from "../Home/Pages/About/About";
 import Skills from "../Home/Pages/Skills/Skills";
 import Journey from "../Home/Pages/Journey/Journey";
 import Projects from "../Home/Pages/Projects/Projects";
+import DownloadCV from "../Home/Pages/DownloadCV/DownloadCV";
 
 export const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ export const router = createBrowserRouter([
         path: "/projects",
         Component: Projects,
       },
+      {
+        path:"/download",
+        Component:DownloadCV
+      }
     ],
   },
 ]);

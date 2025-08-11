@@ -3,18 +3,27 @@ import { GiJourney } from "react-icons/gi";
 import { IoHome, IoPerson, IoConstruct, IoRocket } from "react-icons/io5";
 import { PiDownloadFill } from "react-icons/pi";
 import { Link } from "react-router";
+import "aos/dist/aos.css";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50); // 50px এর বেশি স্ক্রল হলে bg change
+    const checkScroll = () => {
+      setScrolled(window.scrollY > 50);
     };
-    window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    checkScroll();
+    window.addEventListener("scroll", checkScroll);
+    return () => window.removeEventListener("scroll", checkScroll);
   }, []);
+
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 500, // animation duration in ms
+  //     once: true,     // whether animation should happen only once
+  //   });
+  // }, []);
 
   const links = (
     <>
@@ -22,6 +31,10 @@ const Navbar = () => {
         <Link
           className="hover:bg-transparent hover:text-[#aebbda] transition duration-700"
           to="/"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
         >
           Home
         </Link>
@@ -29,7 +42,13 @@ const Navbar = () => {
       <li>
         <Link
           className="hover:bg-transparent hover:text-[#aebbda] transition duration-700"
-          to="/about"
+          to="#about"
+          onClick={(e) => {
+            e.preventDefault();
+            document
+              .getElementById("about")
+              .scrollIntoView({ behavior: "smooth" });
+          }}
         >
           About
         </Link>
@@ -37,7 +56,13 @@ const Navbar = () => {
       <li>
         <Link
           className="hover:bg-transparent hover:text-[#aebbda] transition duration-700"
-          to="/skills"
+          to="#skills"
+          onClick={(e) => {
+            e.preventDefault();
+            document
+              .getElementById("skills")
+              .scrollIntoView({ behavior: "smooth" });
+          }}
         >
           Skills
         </Link>
@@ -45,7 +70,13 @@ const Navbar = () => {
       <li>
         <Link
           className="hover:bg-transparent hover:text-[#aebbda] transition duration-700"
-          to="/projects"
+          to="#projects"
+          onClick={(e) => {
+            e.preventDefault();
+            document
+              .getElementById("projects")
+              .scrollIntoView({ behavior: "smooth" });
+          }}
         >
           Projects
         </Link>
@@ -53,7 +84,13 @@ const Navbar = () => {
       <li>
         <Link
           className="hover:bg-transparent hover:text-[#aebbda] transition duration-700"
-          to="/journey"
+          to="#journey"
+          onClick={(e) => {
+            e.preventDefault();
+            document
+              .getElementById("journey")
+              .scrollIntoView({ behavior: "smooth" });
+          }}
         >
           Journey
         </Link>
@@ -61,7 +98,13 @@ const Navbar = () => {
       <li>
         <Link
           className="hover:bg-transparent hover:text-[#aebbda] transition duration-700"
-          to="/download"
+          to="#download"
+          onClick={(e) => {
+            e.preventDefault();
+            document
+              .getElementById("download")
+              .scrollIntoView({ behavior: "smooth" });
+          }}
         >
           Download CV
         </Link>
@@ -71,40 +114,88 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 right-0 mt-5 sm:w-fit w-[307px] mx-auto border border-[#3b4c74] rounded-2xl transition-colors duration-500 ${
-        scrolled ? "bg-[#1e2a47] shadow-lg" : "bg-transparent"
+      data-aos="fade-down"
+      data-aos-duration="1000"
+      className={`fixed top-0 left-0 right-0 mt-5 z-100 sm:w-fit w-[307px] mx-auto border border-[#3b4c74] rounded-2xl transition-all duration-500 backdrop-blur-md ${
+        scrolled ? "bg-[#1e2a47]/60 shadow-lg" : "bg-transparent"
       }`}
     >
       <div className="navbar items-center justify-center">
         <div>
-          <ul className="flex items-center justify-center gap-5 sm:hidden text-2xl">
+          <ul className="flex items-center justify-center gap-7 sm:hidden text-2xl">
             <li>
-              <Link to="/">
+              <Link
+                to="/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 <IoHome />
               </Link>
             </li>
             <li>
-              <Link to="/about">
+              <Link
+                to="#about"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("about")
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
+              >
                 <IoPerson />
               </Link>
             </li>
             <li>
-              <Link to="/skills">
+              <Link
+                to="#skills"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("skills")
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
+              >
                 <IoConstruct />
               </Link>
             </li>
             <li>
-              <Link to="/journey">
+              <Link
+                to="#projects"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("projects")
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
+              >
                 <IoRocket />
               </Link>
             </li>
             <li>
-              <Link to="/projects">
+              <Link
+                to="#journey"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("journey")
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
+              >
                 <GiJourney />
               </Link>
             </li>
             <li>
-              <Link to="/download">
+              <Link
+                to="#download"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("download")
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
+              >
                 <PiDownloadFill />
               </Link>
             </li>
