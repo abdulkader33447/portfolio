@@ -43,7 +43,7 @@ const RootLayout = () => {
           className="absolute inset-0 z-0 pointer-events-none"
           style={{
             backgroundImage:
-              "radial-gradient(circle 500px at 70% 20%, rgba(59,130,246,0.3), transparent)",
+              "radial-gradient(circle 500px at 70% 10%, rgba(59,130,246,0.3), transparent)",
             backgroundAttachment: "fixed",
           }}
         />

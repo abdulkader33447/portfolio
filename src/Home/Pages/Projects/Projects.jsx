@@ -13,13 +13,13 @@ import {
 import imgOne from "../../../assets/earnly-1f981.web.app_ (1).png";
 import imgTwo from "../../../assets/artifacts-vault.web.app_.png";
 import imgThree from "../../../assets/hobby-hub-app.web.app_.png";
-import { Link } from "react-router";
+
 
 const Projects = () => {
   return (
     <div
       id="projects"
-      className="lg:mt-30sm:w-8/12 mx-auto text-center lg:mt-40 md:mt-30 mt-20 lg:scroll-mt-40 md:scroll-mt-35 scroll-mt-25"
+      className=" mx-auto text-center lg:mt-40 md:mt-30 mt-20 lg:scroll-mt-40 md:scroll-mt-35 scroll-mt-25"
     >
       <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold">
         <span data-aos="fade" data-aos-duration="1000">

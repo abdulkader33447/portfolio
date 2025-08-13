@@ -36,9 +36,15 @@ const Hero = () => {
           <span data-aos="fade" data-aos-duration="1000">
             I design and build modern,
           </span>{" "}
-          <span data-aos="fade" data-aos-duration="1500">responsive, and user-friendly web</span>
-          <span data-aos="fade" data-aos-duration="2000">applications using React,</span>{" "}
-          <span data-aos="fade" data-aos-duration="2500">Tailwind CSS, and Node.js.</span>
+          <span data-aos="fade" data-aos-duration="1500">
+            responsive, and user-friendly web
+          </span>
+          <span data-aos="fade" data-aos-duration="2000">
+            applications using React,
+          </span>{" "}
+          <span data-aos="fade" data-aos-duration="2500">
+            Tailwind CSS, and Node.js.
+          </span>
         </p>
       </div>
       <div className="flex sm:flex-row flex-col items-center justify-center sm:gap-10 gap-6 md:mt-10 mt-8">
@@ -53,22 +59,33 @@ const Hero = () => {
             }}
             className="button rounded-xl hover:border-[#3b4c74] transition duration-700"
           >
-            <span data-aos="fade" data-aos-duration="2000">See
+            <span data-aos="fade" data-aos-duration="2000">
+              See
             </span>{" "}
             <span data-aos="fade" data-aos-duration="2500">
               Projects
             </span>
             <span data-aos="fade" data-aos-duration="3000">
-              <MdArrowDownward /></span>
+              <MdArrowDownward />
+            </span>
           </Link>
         </div>
         <div data-aos="fade" data-aos-duration="1000">
-          <Link className="button sm:flex hidden rounded-xl hover:border-[#3b4c74] transition duration-700">
+          <Link
+            to="#connect"
+            onClick={(e) => {
+              e.preventDefault();
+              document
+                .getElementById("connect")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+            className="button sm:flex hidden rounded-xl hover:border-[#3b4c74] transition duration-700"
+          >
             <span data-aos="fade" data-aos-duration="3000">
               Let’s
             </span>{" "}
             <span data-aos="fade" data-aos-duration="2500">
-              Connect
+              Contact
             </span>
             <span data-aos="fade" data-aos-duration="2000">
               <FiLink />

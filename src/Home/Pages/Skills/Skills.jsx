@@ -96,7 +96,7 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="lg:mt-30sm:w-8/12 mx-auto text-center lg:mt-40 md:mt-30 mt-20 lg:scroll-mt-40 md:scroll-mt-35 scroll-mt-25"
+      className="mx-auto text-center lg:mt-40 md:mt-30 mt-20 lg:scroll-mt-40 md:scroll-mt-35 scroll-mt-25"
     >
       
       <h1

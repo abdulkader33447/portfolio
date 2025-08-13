@@ -48,6 +48,9 @@ const Navbar = () => {
     { id: "download", label: "Download CV" },
   ];
 
+  const cvLink =
+    "https://drive.google.com/file/d/1pvW2JkVr0obFAaGJFFEd8sVeufSoKy_L/view?usp=sharing";
+
   return (
     <div
       className={`fixed top-0 left-0 right-0 mt-5 z-50 sm:w-fit w-[307px] mx-auto border border-[#3b4c74] rounded-2xl transition-all duration-500 backdrop-blur-md ${
@@ -84,7 +87,9 @@ const Navbar = () => {
             </li>
             <li data-aos="fade" data-aos-duration="3000">
               <button onClick={() => handleScrollTo("download")}>
-                <PiDownloadFill />
+                <a href={cvLink} target="_blank">
+                  <PiDownloadFill />
+                </a>
               </button>
             </li>
           </ul>
@@ -95,12 +100,23 @@ const Navbar = () => {
               const aosDuration = 500 + index * 500;
               return (
                 <li key={id} data-aos="fade" data-aos-duration={aosDuration}>
-                  <button
-                    className="hover:bg-transparent hover:text-[#aebbda] transition duration-700"
-                    onClick={() => handleScrollTo(id)}
-                  >
-                    {label}
-                  </button>
+                  {id === "download" ? (
+                    <a
+                      href={cvLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:bg-transparent hover:text-[#aebbda] transition duration-700"
+                    >
+                      {label}
+                    </a>
+                  ) : (
+                    <button
+                      className="hover:bg-transparent hover:text-[#aebbda] transition duration-700"
+                      onClick={() => handleScrollTo(id)}
+                    >
+                      {label}
+                    </button>
+                  )}
                 </li>
               );
             })}

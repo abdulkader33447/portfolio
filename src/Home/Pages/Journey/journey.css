@@ -1,0 +1,19 @@
+/* Force all on one side for mobile */
+@media screen and (max-width: 640px) {
+  .vertical-timeline.vertical-timeline--two-columns {
+    width: 100%;
+  }
+
+  .vertical-timeline.vertical-timeline--two-columns .vertical-timeline-element {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .vertical-timeline-element-content {
+    margin-left: 0 !important;
+  }
+
+  .vertical-timeline-element-icon {
+    left: calc(50% - 25px) !important; /* center icon */
+  }
+}
