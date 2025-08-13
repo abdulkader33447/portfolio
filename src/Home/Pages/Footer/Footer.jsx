@@ -1,4 +1,5 @@
 import { FaFacebookSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import logo from "../../../assets/download.png"
 
 const Footer = () => {
   return (
@@ -6,7 +7,7 @@ const Footer = () => {
       <footer className="footer  sm:footer-horizontal text-neutral-content items-center p-4">
         <aside className="grid-flow-col items-center">
           <img
-            src="../../../../public/download.png"
+            src={logo}
             alt="icon"
             className="size-10 border border-[#3b4c74] rounded-xl"
           />
