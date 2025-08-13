@@ -53,15 +53,13 @@ const Hero = () => {
             }}
             className="button rounded-xl hover:border-[#3b4c74] transition duration-700"
           >
-            <span data-aos="fade" data-aos-duration="2000">
-              See
+            <span data-aos="fade" data-aos-duration="2000">See
             </span>{" "}
             <span data-aos="fade" data-aos-duration="2500">
               Projects
             </span>
             <span data-aos="fade" data-aos-duration="3000">
-              <MdArrowDownward />
-            </span>
+              <MdArrowDownward /></span>
           </Link>
         </div>
         <div data-aos="fade" data-aos-duration="1000">

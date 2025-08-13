@@ -20,7 +20,6 @@ const RootLayout = () => {
       smooth: true,
       smoothTouch: true,
       touchMultiplier: 0.1,
-      
     });
 
     setLenis(lenisInstance);

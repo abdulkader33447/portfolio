@@ -13,6 +13,7 @@ import {
 import imgOne from "../../../assets/earnly-1f981.web.app_ (1).png";
 import imgTwo from "../../../assets/artifacts-vault.web.app_.png";
 import imgThree from "../../../assets/hobby-hub-app.web.app_.png";
+import { Link } from "react-router";
 
 const Projects = () => {
   return (
@@ -45,6 +46,7 @@ const Projects = () => {
           dedication and creativity come
         </span>
         <span data-aos="fade" data-aos-duration="1500">
+          {" "}
           together, turning days and nights
         </span>{" "}
         <span data-aos="fade" data-aos-duration="2000">
@@ -56,14 +58,14 @@ const Projects = () => {
       </p>
 
       {/* card container */}
-      <div className="flex lg:flex-row flex-col gap-5 sm:w-8/12 w-11/12 mx-auto lg:mt-15 mt-10">
+      <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 lg:w-8/12 md:w-10/12 w-11/12 mx-auto lg:mt-15 mt-10">
         {/* card one */}
-        <div className="card bg-[#1e2a47]/50 backdrop-blur-lg border border-[#3b4c74]/50 shadow-sm">
+        <div className="card rounded-2xl bg-[#1e2a47]/50 backdrop-blur-lg border border-[#3b4c74]/50 shadow-sm">
           <figure>
-            <img src={imgOne} alt="Shoes" />
+            <img src={imgOne} alt="Earnly" />
           </figure>
           <div className="card-body">
-            <h2 className="card-title justify-between">
+            <h2 className="card-title lg:text-lg text-sm justify-between">
               <span data-aos="fade" data-aos-duration="1000">
                 Earnly
               </span>
@@ -77,10 +79,8 @@ const Projects = () => {
                   target="_blank"
                   className="text-sm flex items-center gap-2 sm:ml-5 ml-1"
                 >
-                  Live
-                  <LuArrowUpRight />
+                  Live <LuArrowUpRight />
                 </a>
-
                 <a
                   data-aos="fade"
                   data-aos-duration="2500"
@@ -90,10 +90,9 @@ const Projects = () => {
                   aria-label="GitHub Client Repo"
                   className="flex items-center gap-2 text-sm"
                 >
-                  <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />
+                  <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />{" "}
                   <span>Client</span>
                 </a>
-
                 <a
                   data-aos="fade"
                   data-aos-duration="3000"
@@ -103,13 +102,13 @@ const Projects = () => {
                   aria-label="GitHub Server Repo"
                   className="flex items-center gap-2 text-sm"
                 >
-                  <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />
+                  <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />{" "}
                   <span>Server</span>
                 </a>
               </div>
             </h2>
             <p data-aos="fade" data-aos-duration="2500" className="text-start">
-              Earnly is a full-featured micro-task and earning platform . It
+              Earnly is a full-featured micro-task and earning platform. It
               enables workers to earn coins by completing small tasks and allows
               buyers to create and manage paid tasks. An admin panel ensures
               smooth moderation of the system.
@@ -120,10 +119,12 @@ const Projects = () => {
                 data-aos-duration="500"
                 href="https://react.dev/"
                 target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "0s" }}
               >
                 <FaReact
                   key="react"
-                  className="text-blue-400 sm:h-12 h-9 sm:w-12 w-9 border rounded-full sm:p-2 p-1"
+                  className="text-blue-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
                 />
               </a>
 
@@ -132,54 +133,68 @@ const Projects = () => {
                 data-aos-duration="1000"
                 href="https://tailwindcss.com/"
                 target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "0.5s" }}
               >
                 <SiTailwindcss
                   key="tailwind"
-                  className="text-cyan-400 sm:h-12 h-9 sm:w-12 w-9 border rounded-full sm:p-2 p-1"
+                  className="text-cyan-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
                 />
               </a>
+
               <a
                 data-aos="fade"
                 data-aos-duration="1500"
                 href="https://daisyui.com/"
                 target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "1s" }}
               >
                 <SiDaisyui
                   key="daisyui"
-                  className="text-purple-400 sm:h-12 h-9 sm:w-12 w-9 border rounded-full sm:p-2 p-1"
+                  className="text-purple-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
                 />
               </a>
+
               <a
                 data-aos="fade"
                 data-aos-duration="2000"
                 href="https://firebase.google.com/"
                 target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "1.5s" }}
               >
                 <SiFirebase
                   key="firebase"
-                  className="text-yellow-500 sm:h-12 h-9 sm:w-12 w-9 border rounded-full sm:p-2 p-1"
+                  className="text-yellow-500 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
                 />
               </a>
+
               <a
                 data-aos="fade"
                 data-aos-duration="2500"
                 href="https://expressjs.com/"
                 target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "2s" }}
               >
                 <SiExpress
                   key="express"
-                  className="text-gray-300 sm:h-12 h-9 sm:w-12 w-9 border rounded-full sm:p-2 p-1"
+                  className="text-gray-300 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
                 />
               </a>
+
               <a
                 data-aos="fade"
                 data-aos-duration="3000"
                 href="https://www.mongodb.com/"
                 target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "2.5s" }}
               >
                 <SiMongodb
                   key="mongodb"
-                  className="text-green-500 sm:h-12 h-9 sm:w-12 w-9 border rounded-full sm:p-2 p-1"
+                  className="text-green-500 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
                 />
               </a>
             </div>
@@ -187,12 +202,12 @@ const Projects = () => {
         </div>
 
         {/* card two */}
-        <div className="card bg-[#1e2a47]/50 backdrop-blur-lg border border-[#3b4c74]/50 shadow-sm">
+        <div className="card rounded-2xl bg-[#1e2a47]/50 backdrop-blur-lg border border-[#3b4c74]/50 shadow-sm">
           <figure>
-            <img src={imgTwo} alt="Shoes" />
+            <img src={imgTwo} alt="Artifacts Vault" />
           </figure>
           <div className="card-body">
-            <h2 className="card-title justify-between">
+            <h2 className="card-title lg:text-lg text-sm justify-between">
               <span data-aos="fade" data-aos-duration="1000">
                 Artifacts Vault
               </span>
@@ -206,10 +221,8 @@ const Projects = () => {
                   target="_blank"
                   className="text-sm flex items-center gap-2 sm:ml-5 ml-1"
                 >
-                  Live
-                  <LuArrowUpRight />
+                  Live <LuArrowUpRight />
                 </a>
-
                 <a
                   data-aos="fade"
                   data-aos-duration="2500"
@@ -219,10 +232,9 @@ const Projects = () => {
                   aria-label="GitHub Client Repo"
                   className="flex items-center gap-2 text-sm"
                 >
-                  <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />
+                  <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />{" "}
                   <span>Client</span>
                 </a>
-
                 <a
                   data-aos="fade"
                   data-aos-duration="3000"
@@ -232,7 +244,7 @@ const Projects = () => {
                   aria-label="GitHub Server Repo"
                   className="flex items-center gap-2 text-sm"
                 >
-                  <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />
+                  <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />{" "}
                   <span>Server</span>
                 </a>
               </div>
@@ -248,10 +260,12 @@ const Projects = () => {
                 data-aos-duration="500"
                 href="https://react.dev/"
                 target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "0s" }}
               >
                 <FaReact
                   key="react"
-                  className="text-blue-400 sm:h-12 h-9 sm:w-12 w-9 border rounded-full sm:p-2 p-1"
+                  className="text-blue-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
                 />
               </a>
               <a
@@ -259,10 +273,12 @@ const Projects = () => {
                 data-aos-duration="1000"
                 href="https://tailwindcss.com/"
                 target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "0.5s" }}
               >
                 <SiTailwindcss
                   key="tailwind"
-                  className="text-cyan-400 sm:h-12 h-9 sm:w-12 w-9 border rounded-full sm:p-2 p-1"
+                  className="text-cyan-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
                 />
               </a>
               <a
@@ -271,9 +287,11 @@ const Projects = () => {
                 href="https://sweetalert2.github.io/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="float-chain"
+                style={{ animationDelay: "1s" }}
               >
                 <div
-                  className="sm:h-12 h-9 sm:w-12 w-9 border rounded-full sm:p-2 p-1 flex items-center justify-center"
+                  className="xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1 flex items-center justify-center"
                   style={{ backgroundColor: "#A5DC86" }}
                 >
                   <svg
@@ -292,11 +310,13 @@ const Projects = () => {
                 href="https://www.framer.com/motion/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="float-chain"
+                style={{ animationDelay: "1.5s" }}
               >
                 <SiFramer
                   key="framer-motion"
                   style={{ color: "#0055FF" }}
-                  className="sm:h-12 h-9 sm:w-12 w-9 border rounded-full sm:p-2 p-1"
+                  className="xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
                 />
               </a>
               <a
@@ -304,10 +324,12 @@ const Projects = () => {
                 data-aos-duration="2500"
                 href="https://www.mongodb.com/"
                 target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "2s" }}
               >
                 <SiMongodb
                   key="mongodb"
-                  className="text-green-500 sm:h-12 h-9 sm:w-12 w-9 border rounded-full sm:p-2 p-1"
+                  className="text-green-500 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
                 />
               </a>
               <a
@@ -316,11 +338,12 @@ const Projects = () => {
                 href="https://github.com/motdotla/dotenv"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="float-chain"
+                style={{ color: "#ECD53F", animationDelay: "2.5s" }}
               >
                 <SiDotenv
                   key="dotenv"
-                  style={{ color: "#ECD53F" }}
-                  className="sm:h-12 h-9 sm:w-12 w-9 border rounded-full sm:p-2 p-1"
+                  className="xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
                 />
               </a>
             </div>
@@ -328,12 +351,12 @@ const Projects = () => {
         </div>
 
         {/* card three */}
-        <div className="card bg-[#1e2a47]/50 backdrop-blur-lg border border-[#3b4c74]/50 shadow-sm">
+        <div className="card rounded-2xl bg-[#1e2a47]/50 backdrop-blur-lg border border-[#3b4c74]/50 shadow-sm">
           <figure>
-            <img src={imgThree} alt="Shoes" />
+            <img src={imgThree} alt="Hobby Hub" />
           </figure>
           <div className="card-body">
-            <h2 className="card-title justify-between">
+            <h2 className="card-title lg:text-lg text-sm justify-between">
               <span data-aos="fade" data-aos-duration="1000">
                 Hobby Hub
               </span>
@@ -347,10 +370,8 @@ const Projects = () => {
                   target="_blank"
                   className="text-sm flex items-center gap-2 sm:ml-5 ml-1"
                 >
-                  Live
-                  <LuArrowUpRight />
+                  Live <LuArrowUpRight />
                 </a>
-
                 <a
                   data-aos="fade"
                   data-aos-duration="2500"
@@ -360,10 +381,9 @@ const Projects = () => {
                   aria-label="GitHub Client Repo"
                   className="flex items-center gap-2 text-sm"
                 >
-                  <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />
+                  <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />{" "}
                   <span>Client</span>
                 </a>
-
                 <a
                   data-aos="fade"
                   data-aos-duration="3000"
@@ -373,13 +393,16 @@ const Projects = () => {
                   aria-label="GitHub Server Repo"
                   className="flex items-center gap-2 text-sm"
                 >
-                  <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />
+                  <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />{" "}
                   <span>Server</span>
                 </a>
               </div>
             </h2>
             <p data-aos="fade" data-aos-duration="2500" className="text-start">
-              HobbyHub is a vibrant platform where people can discover, or create local hobby-based groups such as book clubs, hiking teams, painting circles, and more. It fosters a sense of community through shared interests and real-life meetups.
+              HobbyHub is a vibrant platform where people can discover, or
+              create local hobby-based groups such as book clubs, hiking teams,
+              painting circles, and more. It fosters a sense of community
+              through shared interests and real-life meetups.
             </p>
             <div className="card-actions justify-between sm:mt-5 mt-3">
               <a
@@ -387,10 +410,12 @@ const Projects = () => {
                 data-aos-duration="500"
                 href="https://react.dev/"
                 target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "0s" }}
               >
                 <FaReact
                   key="react"
-                  className="text-blue-400 sm:h-12 h-9 sm:w-12 w-9 border rounded-full sm:p-2 p-1"
+                  className="text-blue-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
                 />
               </a>
               <a
@@ -398,10 +423,12 @@ const Projects = () => {
                 data-aos-duration="1000"
                 href="https://tailwindcss.com/"
                 target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "0.5s" }}
               >
                 <SiTailwindcss
                   key="tailwind"
-                  className="text-cyan-400 sm:h-12 h-9 sm:w-12 w-9 border rounded-full sm:p-2 p-1"
+                  className="text-cyan-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
                 />
               </a>
               <a
@@ -409,10 +436,12 @@ const Projects = () => {
                 data-aos-duration="1500"
                 href="https://firebase.google.com/"
                 target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "1s" }}
               >
                 <SiFirebase
                   key="firebase"
-                  className="text-yellow-500 sm:h-12 h-9 sm:w-12 w-9 border rounded-full sm:p-2 p-1"
+                  className="text-yellow-500 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
                 />
               </a>
               <a
@@ -420,10 +449,12 @@ const Projects = () => {
                 data-aos-duration="2000"
                 href="https://daisyui.com/"
                 target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "1.5s" }}
               >
                 <SiDaisyui
                   key="daisyui"
-                  className="text-purple-400 sm:h-12 h-9 sm:w-12 w-9 border rounded-full sm:p-2 p-1"
+                  className="text-purple-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
                 />
               </a>
               <a
@@ -431,10 +462,12 @@ const Projects = () => {
                 data-aos-duration="2500"
                 href="https://www.mongodb.com/"
                 target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "2s" }}
               >
                 <SiMongodb
                   key="mongodb"
-                  className="text-green-500 sm:h-12 h-9 sm:w-12 w-9 border rounded-full sm:p-2 p-1"
+                  className="text-green-500 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
                 />
               </a>
               <a
@@ -443,11 +476,12 @@ const Projects = () => {
                 href="https://github.com/motdotla/dotenv"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="float-chain"
+                style={{ color: "#ECD53F", animationDelay: "2.5s" }}
               >
                 <SiDotenv
                   key="dotenv"
-                  style={{ color: "#ECD53F" }}
-                  className="sm:h-12 h-9 sm:w-12 w-9 border rounded-full sm:p-2 p-1"
+                  className="xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
                 />
               </a>
             </div>

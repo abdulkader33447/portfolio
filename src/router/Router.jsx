@@ -34,9 +34,9 @@ export const router = createBrowserRouter([
         Component: Projects,
       },
       {
-        path:"/download",
-        Component:DownloadCV
-      }
+        path: "/download",
+        Component: DownloadCV,
+      },
     ],
   },
 ]);

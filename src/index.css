@@ -65,6 +65,20 @@
   }
 }
 
+@keyframes floatChain {
+  0%, 20%, 100% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-10px);
+  }
+}
+
+.float-chain {
+  animation: floatChain 6s ease-in-out infinite;
+}
+
+
 .button:after {
   filter: blur(50px);
 }
