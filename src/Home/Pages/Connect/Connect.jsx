@@ -11,7 +11,7 @@ const Connect = () => {
         Contact
       </h1>
       <div className="sm:mt-15 mt-7 w-fit mx-auto">
-        <div className="border border-[#3b4c74]/50 bg-[#1e2a47]/30 backdrop-blur-lg rounded-2xl sm:p-5 p-3 shadow-md text-xl space-y-3">
+        <div className="border border-[#3b4c74]/50 bg-[#1e2a47]/30 backdrop-blur-lg rounded-2xl sm:p-5 p-3 shadow-md sm:text-2xl space-y-3">
           <h1 className="flex items-center gap-3">
             <PiMailboxFill className="text-blue-400 hover:text-cyan-400 transition duration-700"/>
 
