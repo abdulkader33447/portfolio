@@ -1,13 +1,14 @@
 import { FaFacebookSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
-import logo from "../../../assets/download.png"
+
 
 const Footer = () => {
+    // console.log(logo);
   return (
     <div className="sm:w-8/12 w-full mx-auto text-center lg:mt-40 md:mt-30 mt-20 lg:scroll-mt-40 md:scroll-mt-35 scroll-mt-25">
       <footer className="footer  sm:footer-horizontal text-neutral-content items-center p-4">
         <aside className="grid-flow-col items-center">
           <img
-            src={logo}
+            src="https://i.ibb.co.com/1JJrHHpM/download.png"
             alt="icon"
             className="size-10 border border-[#3b4c74] rounded-xl"
           />
