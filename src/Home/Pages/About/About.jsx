@@ -1,6 +1,7 @@
 import "aos/dist/aos.css";
 import { GiSkills } from "react-icons/gi";
 import { FaBookOpenReader } from "react-icons/fa6";
+import { MdCenterFocusStrong } from "react-icons/md";
 
 const About = () => {
   return (
@@ -8,7 +9,6 @@ const About = () => {
       id="about"
       className="text-center lg:mt-40 md:mt-30 mt-15 lg:scroll-mt-40 md:scroll-mt-35 scroll-mt-25"
     >
-      
       <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold">
         <span data-aos="fade" data-aos-duration="1000">
           ABO
@@ -22,7 +22,7 @@ const About = () => {
       </h1>
 
       {/* grid section */}
-      <div className="sm:w-8/12 w-11/12 mx-auto grid xl:grid-cols-2 grid-cols-1 sm:gap-8 gap-5 sm:mt-15 mt-7">
+      <div className="sm:w-8/12 w-11/12 mx-auto grid xl:grid-cols-3 grid-cols-1 sm:gap-8 gap-5 sm:mt-15 mt-7">
         {/* left box */}
         <div
           data-aos="fade"
@@ -78,7 +78,7 @@ const About = () => {
           </p>
         </div>
 
-        {/* right box */}
+        {/* middle box */}
         <div
           data-aos="fade"
           data-aos-duration="1000"
@@ -105,10 +105,10 @@ const About = () => {
           <hr
             data-aos="fade"
             data-aos-duration="1500"
-            className="text-[#3b4c74] my-5"
+            className="text-[#3b4c74] sm:my-10 my-5"
           />
           <div data-aos="fade" data-aos-duration="2000">
-            <FaBookOpenReader className="size-5 mb-2" />
+            <MdCenterFocusStrong className="size-5 mb-2" />
             <div
               data-aos="fade"
               data-aos-duration="2500"
@@ -118,6 +118,44 @@ const About = () => {
               <p>
                 Moving forward, I aim to master modern technologies like
                 Next.js, Redux, PostgreSQL, Prisma, GraphQL, and Docker
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* right box */}
+        <div
+          data-aos="fade"
+          data-aos-duration="1000"
+          className="border border-[#3b4c74]/50 bg-[#1e2a47]/30 backdrop-blur-lg rounded-2xl sm:p-5 p-3 shadow-md text-white"
+        >
+          <div data-aos="fade" data-aos-duration="1500">
+            <FaBookOpenReader
+              data-aos="fade"
+              data-aos-duration="2000"
+              className="size-5 mb-2"
+            />
+            <div
+              data-aos="fade"
+              data-aos-duration="2000"
+              className="text-start"
+            >
+              <h1 className="font-bold text-start">Interest</h1>
+              <p>
+                <span data-aos="fade"
+              data-aos-duration="1000">I have a keen interest in reading, with a particular fondness
+                for mystery and thriller genres. Detective stories, in
+                particular, captivate me the most. My passion for this genre
+                began with Rakib Hasan/Shamsuddin Nawab’s "Tin Goyenda"</span>
+                <span data-aos="fade"
+              data-aos-duration="1500">series, which introduced me to the world of detective fiction.
+                This led me to explore iconic works featuring characters like
+                Sherlock Holmes, Feluda, Satyajit Ray’s Satyanveshi, and </span>
+                <span data-aos="fade"
+              data-aos-duration="2000">Sunil Gangopadhyay’s Kakababu. Recently, I have developed an
+                appreciation for audio dramas based on these stories and novels.
+                This interest introduced me to <a href="https://www.youtube.com/@MirchiBangla" target="_blank" className="text-blue-400 underline">Radio Mirchi Bangla</a>, which
+                delivers these narratives with exceptional storytelling finesse.</span>
               </p>
             </div>
           </div>
