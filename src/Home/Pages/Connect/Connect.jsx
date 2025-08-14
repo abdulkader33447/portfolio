@@ -15,11 +15,11 @@ const Connect = () => {
           <h1 className="flex items-center gap-3">
             <PiMailboxFill className="text-blue-400 hover:text-cyan-400 transition-colors"/>
 
-            <span> abdulkader33447@gmail.com</span>
+            <span>abdulkader33447@gmail.com</span>
           </h1>
           <h1 className="flex items-center gap-3 ">
             <IoCall className="text-blue-400 hover:text-cyan-400 transition-colors"/>
-            <span>0133173419</span>
+            <span>+8801331763419</span>
           </h1>
         </div>
       </div>
