@@ -93,7 +93,7 @@ const Projects = () => {
                   <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />{" "}
                   <span>Client</span>
                 </a>
-                <a
+                {/* <a
                   data-aos="fade"
                   data-aos-duration="3000"
                   href="https://github.com/abdulkader33447/a10-hobby-hub-server"
@@ -104,7 +104,7 @@ const Projects = () => {
                 >
                   <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />{" "}
                   <span>Server</span>
-                </a>
+                </a> */}
               </div>
             </h2>
             <p data-aos="fade" data-aos-duration="2500" className="text-start">
@@ -235,7 +235,7 @@ const Projects = () => {
                   <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />{" "}
                   <span>Client</span>
                 </a>
-                <a
+                {/* <a
                   data-aos="fade"
                   data-aos-duration="3000"
                   href="https://github.com/abdulkader33447/my-artifact-vault-server"
@@ -246,7 +246,7 @@ const Projects = () => {
                 >
                   <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />{" "}
                   <span>Server</span>
-                </a>
+                </a> */}
               </div>
             </h2>
             <p data-aos="fade" data-aos-duration="2500" className="text-start">
@@ -384,7 +384,7 @@ const Projects = () => {
                   <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />{" "}
                   <span>Client</span>
                 </a>
-                <a
+                {/* <a
                   data-aos="fade"
                   data-aos-duration="3000"
                   href="https://github.com/abdulkader33447/a10-hobby-hub-server"
@@ -395,7 +395,7 @@ const Projects = () => {
                 >
                   <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />{" "}
                   <span>Server</span>
-                </a>
+                </a> */}
               </div>
             </h2>
             <p data-aos="fade" data-aos-duration="2500" className="text-start">
