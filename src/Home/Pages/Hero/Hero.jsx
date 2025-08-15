@@ -57,7 +57,7 @@ const Hero = () => {
                 .getElementById("projects")
                 .scrollIntoView({ behavior: "smooth" });
             }}
-            className="button rounded-xl hover:border-[#3b4c74] transition duration-700"
+            className="button rounded-xl hover:border-[#3b4c74] transition duration-700 sm:text-[16px] text-sm"
           >
             <span data-aos="fade" data-aos-duration="2000">
               See
@@ -79,7 +79,7 @@ const Hero = () => {
                 .getElementById("connect")
                 .scrollIntoView({ behavior: "smooth" });
             }}
-            className="button sm:flex hidden rounded-xl hover:border-[#3b4c74] transition duration-700"
+            className="button flex rounded-xl hover:border-[#3b4c74] transition duration-700 sm:text-[16px] text-sm"
           >
             <span data-aos="fade" data-aos-duration="3000">
               Let’s
