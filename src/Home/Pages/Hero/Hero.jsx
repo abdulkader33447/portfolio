@@ -38,7 +38,7 @@ const Hero = () => {
           </span>{" "}
           <span data-aos="fade" data-aos-duration="1500">
             responsive, and user-friendly web
-          </span>
+          </span>{" "}
           <span data-aos="fade" data-aos-duration="2000">
             applications using React,
           </span>{" "}
