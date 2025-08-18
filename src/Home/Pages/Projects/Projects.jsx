@@ -14,7 +14,6 @@ import imgOne from "../../../assets/earnly-1f981.web.app_ (1).png";
 import imgTwo from "../../../assets/artifacts-vault.web.app_.png";
 import imgThree from "../../../assets/hobby-hub-app.web.app_.png";
 
-
 const Projects = () => {
   return (
     <div
@@ -61,7 +60,7 @@ const Projects = () => {
       <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 lg:w-8/12 md:w-10/12 w-11/12 mx-auto lg:mt-15 mt-10">
         {/* card one */}
         <div className="card rounded-2xl bg-[#1e2a47]/50 backdrop-blur-lg border border-[#3b4c74]/50 shadow-sm">
-          <figure>
+          <figure data-aos="fade" data-aos-duration="2000">
             <img src={imgOne} alt="Earnly" />
           </figure>
           <div className="card-body">
@@ -203,7 +202,7 @@ const Projects = () => {
 
         {/* card two */}
         <div className="card rounded-2xl bg-[#1e2a47]/50 backdrop-blur-lg border border-[#3b4c74]/50 shadow-sm">
-          <figure>
+          <figure data-aos="fade" data-aos-duration="2000">
             <img src={imgTwo} alt="Artifacts Vault" />
           </figure>
           <div className="card-body">
@@ -352,7 +351,7 @@ const Projects = () => {
 
         {/* card three */}
         <div className="card rounded-2xl bg-[#1e2a47]/50 backdrop-blur-lg border border-[#3b4c74]/50 shadow-sm">
-          <figure>
+          <figure data-aos="fade" data-aos-duration="2000">
             <img src={imgThree} alt="Hobby Hub" />
           </figure>
           <div className="card-body">
