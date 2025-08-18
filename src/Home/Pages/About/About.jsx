@@ -61,10 +61,11 @@ const About = () => {
             data-aos-duration="1500"
             className="text-start mt-5"
           >
-            a passionate Front-End Developer with over eight months of dedicated
-            learning and hands-on practice in the MERN stack. During this
-            journey, I’ve built dynamic, responsive, and scalable web
-            applications that prioritize both performance and user experience.
+            A passionate Front-End Developer with over eight months of dedicated
+            learning and hands-on practice as a frontend-based MERN stack
+            developer. During this journey, I’ve built dynamic, responsive, and
+            scalable web applications that prioritize both performance and user
+            experience.
           </p>
           <p
             data-aos="fade"
@@ -142,20 +143,31 @@ const About = () => {
             >
               <h1 className="font-bold text-start">Interest</h1>
               <p>
-                <span data-aos="fade"
-              data-aos-duration="1000">I have a keen interest in reading, with a particular fondness
-                for mystery and thriller genres. Detective stories, in
-                particular, captivate me the most. My passion for this genre
-                began with Rakib Hasan/Shamsuddin Nawab’s "Tin Goyenda"</span>
-                <span data-aos="fade"
-              data-aos-duration="1500">series, which introduced me to the world of detective fiction.
-                This led me to explore iconic works featuring characters like
-                Sherlock Holmes, Feluda, Satyajit Ray’s Satyanveshi, and </span>
-                <span data-aos="fade"
-              data-aos-duration="2000">Sunil Gangopadhyay’s Kakababu. Recently, I have developed an
-                appreciation for audio dramas based on these stories and novels.
-                This interest introduced me to <a href="https://www.youtube.com/@MirchiBangla" target="_blank" className="text-blue-400 underline">Radio Mirchi Bangla</a>, which
-                delivers these narratives with exceptional storytelling finesse.</span>
+                <span data-aos="fade" data-aos-duration="1000">
+                  I have a keen interest in reading, with a particular fondness
+                  for mystery and thriller genres. Detective stories, in
+                  particular, captivate me the most. My passion for this genre
+                  began with Rakib Hasan/Shamsuddin Nawab’s "Tin Goyenda"
+                </span>
+                <span data-aos="fade" data-aos-duration="1500">
+                  series, which introduced me to the world of detective fiction.
+                  This led me to explore iconic works featuring characters like
+                  Sherlock Holmes, Feluda, Satyajit Ray’s Satyanveshi, and{" "}
+                </span>
+                <span data-aos="fade" data-aos-duration="2000">
+                  Sunil Gangopadhyay’s Kakababu. Recently, I have developed an
+                  appreciation for audio dramas based on these stories and
+                  novels. This interest introduced me to{" "}
+                  <a
+                    href="https://www.youtube.com/@MirchiBangla"
+                    target="_blank"
+                    className="text-blue-400 underline"
+                  >
+                    Radio Mirchi Bangla
+                  </a>
+                  , which delivers these narratives with exceptional
+                  storytelling finesse.
+                </span>
               </p>
             </div>
           </div>
