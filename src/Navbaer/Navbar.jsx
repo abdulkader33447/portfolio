@@ -45,7 +45,7 @@ const Navbar = () => {
     { id: "skills", label: "Skills" },
     { id: "projects", label: "Projects" },
     { id: "journey", label: "Journey" },
-    { id: "download", label: "Download CV" },
+    { id: "download", label: "View Resume" },
   ];
 
   const cvLink =
