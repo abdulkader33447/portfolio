@@ -48,7 +48,7 @@ const Hero = () => {
         </p>
       </div>
       <div className="flex sm:flex-row flex-col items-center justify-center sm:gap-10 gap-6 md:mt-10 mt-8">
-        <div data-aos="fade" data-aos-duration="1000">
+        <div data-aos="zoom-in" data-aos-duration="300">
           <Link
             to="#projects"
             onClick={(e) => {
@@ -70,7 +70,7 @@ const Hero = () => {
             </span>
           </Link>
         </div>
-        <div data-aos="fade" data-aos-duration="1000">
+        <div data-aos="zoom-in" data-aos-duration="300">
           <Link
             to="#connect"
             onClick={(e) => {
