@@ -49,7 +49,7 @@ const Navbar = () => {
   ];
 
   const cvLink =
-    "https://drive.google.com/file/d/1tpdhV-aIOueGMsD8MxSIqwwVyDZIgd0C/view?usp=sharing";
+    "https://drive.google.com/file/d/1iuQcmNEbspxkMGJDRgcrD-1Vr3J7uV-o/view?usp=sharing";
 
   return (
     <div
