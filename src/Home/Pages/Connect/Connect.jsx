@@ -54,7 +54,7 @@ const Connect = () => {
     >
       <div className="flex items-center gap-2 mb-4">
         <FaEnvelopeOpenText className="size-6 text-blue-400" />
-        <h2 className="text-lg font-bold">Contact Me</h2>
+        <h2 className="text-lg font-bold">Send a mail</h2>
       </div>
 
       <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
