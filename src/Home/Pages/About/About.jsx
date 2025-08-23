@@ -2,6 +2,7 @@ import "aos/dist/aos.css";
 import { GiSkills } from "react-icons/gi";
 import { FaBookOpenReader } from "react-icons/fa6";
 import { MdCenterFocusStrong } from "react-icons/md";
+import profile from "../../../assets/profile.png"
 
 const About = () => {
   return (
@@ -37,9 +38,10 @@ const About = () => {
             <img
               data-aos="fade"
               data-aos-duration="1500"
-              className="sm:size-20 size-12 sm:rounded-2xl rounded-xl border border-[#4a6197]"
-              src="https://i.ibb.co.com/FTdSmdP/Whats-App-Image-2025-08-11-at-19-09-19-fc10f1e3.jpg"
+              className="sm:size-18 size-12 sm:rounded-2xl rounded-xl border border-[#4a6197]"
+              src={profile}
               alt="image"
+              
             />
             <div
               data-aos="fade"
