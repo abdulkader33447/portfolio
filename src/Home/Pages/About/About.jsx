@@ -38,7 +38,7 @@ const About = () => {
             <img
               data-aos="fade"
               data-aos-duration="1500"
-              className="sm:size-18 size-12 sm:rounded-2xl rounded-xl border border-[#4a6197]"
+              className="sm:size-18 size-12 rounded-full border border-[#4a6197] transition duration-500"
               src={profile}
               alt="image"
               
