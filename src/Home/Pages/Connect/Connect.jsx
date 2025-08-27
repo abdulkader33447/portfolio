@@ -48,7 +48,7 @@ const Connect = () => {
   };
 
   return (
-    <div className="sm:flex items-center justify-center gap-10">
+    <div className="sm:flex items-center justify-center sm:gap-10 gap-5">
       {/* left */}
       <div
         id="connect"
@@ -100,7 +100,7 @@ const Connect = () => {
         id="connect"
         data-aos="fade"
         data-aos-duration="1000"
-        className="sm:ml-0 mx-auto text-center lg:mt-40 md:mt-30 mt-20 lg:scroll-mt-40 md:scroll-mt-35 scroll-mt-25 border border-[#3b4c74]/50 bg-[#1e2a47]/30 backdrop-blur-lg rounded-2xl sm:p-6 p-4 shadow-md  w-11/12 sm:w-xl"
+        className="sm:ml-0 mx-auto text-center lg:mt-40 md:mt-30 mt-10 lg:scroll-mt-40 md:scroll-mt-35 scroll-mt-25 border border-[#3b4c74]/50 bg-[#1e2a47]/30 backdrop-blur-lg rounded-2xl sm:p-6 p-4 shadow-md  w-11/12 sm:w-xl"
       >
         <div className="flex items-center gap-2 mb-4">
           <MdMarkEmailUnread className="size-6 text-blue-400" />
