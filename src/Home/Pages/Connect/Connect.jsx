@@ -103,7 +103,7 @@ const Connect = () => {
         className="sm:ml-0 mx-auto text-center lg:mt-40 md:mt-30 mt-10 lg:scroll-mt-40 md:scroll-mt-35 scroll-mt-25 border border-[#3b4c74]/50 bg-[#1e2a47]/30 backdrop-blur-lg rounded-2xl sm:p-6 p-4 shadow-md  w-11/12 sm:w-xl"
       >
         <div className="flex items-center gap-2 mb-4">
-          <MdMarkEmailUnread className="size-6 text-blue-400" />
+          <MdMarkEmailUnread className="size-6 text-red-400" />
           <h2 className="text-lg font-bold">Send a mail</h2>
         </div>
 
