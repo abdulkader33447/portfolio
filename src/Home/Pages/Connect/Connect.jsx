@@ -113,21 +113,21 @@ const Connect = () => {
             name="from_name"
             placeholder="Your Name"
             required
-            className="input focus:border-none focus:outline-none focus:ring-2 focus:ring-[#3b4c74] shadow-none focus:shadow-none border-[#3b4c74]  w-full rounded-lg bg-[#1e2a47] transition duration-500"
+            className="input focus:border-none focus:outline-none focus:ring-2 focus:ring-[#3b4c74] shadow-none focus:shadow-none border-none  w-full rounded-lg bg-[#1e2a47] transition duration-500"
           />
           <input
             type="email"
             name="from_email"
             placeholder="Your Email"
             required
-            className="input focus:border-none focus:outline-none focus:ring-2 focus:ring-[#3b4c74] shadow-none focus:shadow-none border-[#3b4c74]  w-full rounded-lg bg-[#1e2a47] transition duration-500"
+            className="input focus:border-none focus:outline-none focus:ring-2 focus:ring-[#3b4c74] shadow-none focus:shadow-none border-none  w-full rounded-lg bg-[#1e2a47] transition duration-500"
           />
           <textarea
             name="message"
             placeholder="Your Message"
             rows="4"
             required
-            className="textarea input focus:border-none focus:outline-none focus:ring-2 focus:ring-[#3b4c74] shadow-none focus:shadow-none border-[#3b4c74]  w-full rounded-lg bg-[#1e2a47] transition duration-500"
+            className="textarea input focus:border-none focus:outline-none focus:ring-2 focus:ring-[#3b4c74] shadow-none focus:shadow-none border-none  w-full rounded-lg bg-[#1e2a47] transition duration-500"
           />
           <button
             type="submit"
