@@ -13,6 +13,7 @@ import {
 import imgOne from "../../../assets/earnly-1f981.web.app_ (1).png";
 import imgTwo from "../../../assets/artifacts-vault.web.app_.png";
 import imgThree from "../../../assets/hobby-hub-app.web.app_.png";
+import imgFour from "../../../assets/shiritori.png";
 
 const Projects = () => {
   return (
@@ -483,6 +484,149 @@ const Projects = () => {
                   className="xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
                 />
               </a>
+            </div>
+          </div>
+        </div>
+
+        {/* card four */}
+        <div className="card rounded-2xl bg-[#1e2a47]/50 backdrop-blur-lg border border-[#3b4c74]/50 shadow-sm">
+          <figure data-aos="fade" data-aos-duration="2000">
+            <img src={imgFour} alt="Shiritori" />
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title lg:text-lg text-sm justify-between">
+              <span data-aos="fade" data-aos-duration="1000">
+                Shiritori
+              </span>
+
+              {/* Live + GitHub links group */}
+              <div className="flex items-center gap-2">
+                <a
+                  data-aos="fade"
+                  data-aos-duration="2000"
+                  href="https://englishshiritori.vercel.app/"
+                  target="_blank"
+                  className="text-sm flex items-center gap-2 sm:ml-5 ml-1"
+                >
+                  Live <LuArrowUpRight />
+                </a>
+                <a
+                  data-aos="fade"
+                  data-aos-duration="2500"
+                  href="https://github.com/abdulkader33447/shiritori-"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub Client Repo"
+                  className="flex items-center gap-2 text-sm"
+                >
+                  <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />{" "}
+                  <span>Github Repo</span>
+                </a>
+                {/* <a
+                  data-aos="fade"
+                  data-aos-duration="3000"
+                  href="https://github.com/abdulkader33447/a10-hobby-hub-server"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub Server Repo"
+                  className="flex items-center gap-2 text-sm"
+                >
+                  <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />{" "}
+                  <span>Server</span>
+                </a> */}
+              </div>
+            </h2>
+            <p data-aos="fade" data-aos-duration="2500" className="text-start">
+              A fun, two-player word game built with React. Players take turns
+              entering English words that begin with the last letter of the
+              previous word. The game features:<br></br>
+              <li>turn-based gameplay</li>
+              <li>Score tracking</li>
+              <li>Dictionary validation</li>
+              <li>Clean, responsive UI</li>
+            </p>
+
+            {/* used tech */}
+            <div className="card-actions justify-center sm:mt-5 mt-3">
+              <a
+                data-aos="fade"
+                data-aos-duration="500"
+                href="https://react.dev/"
+                target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "0s" }}
+              >
+                <FaReact
+                  key="react"
+                  className="text-blue-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
+                />
+              </a>
+              <a
+                data-aos="fade"
+                data-aos-duration="1000"
+                href="https://tailwindcss.com/"
+                target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "0.5s" }}
+              >
+                <SiTailwindcss
+                  key="tailwind"
+                  className="text-cyan-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
+                />
+              </a>
+              {/* <a
+                data-aos="fade"
+                data-aos-duration="1500"
+                href="https://firebase.google.com/"
+                target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "1s" }}
+              >
+                <SiFirebase
+                  key="firebase"
+                  className="text-yellow-500 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
+                />
+              </a> */}
+              <a
+                data-aos="fade"
+                data-aos-duration="2000"
+                href="https://daisyui.com/"
+                target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "1.5s" }}
+              >
+                <SiDaisyui
+                  key="daisyui"
+                  className="text-purple-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
+                />
+              </a>
+              {/* <a
+                data-aos="fade"
+                data-aos-duration="2500"
+                href="https://www.mongodb.com/"
+                target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "2s" }}
+              >
+                <SiMongodb
+                  key="mongodb"
+                  className="text-green-500 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
+                />
+              </a> */}
+              {/* <a
+                data-aos="fade"
+                data-aos-duration="3000"
+                href="https://github.com/motdotla/dotenv"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="float-chain"
+                style={{ color: "#ECD53F", animationDelay: "2.5s" }}
+              >
+                <SiDotenv
+                  key="dotenv"
+                  className="xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
+                />
+              </a> */}
             </div>
           </div>
         </div>
