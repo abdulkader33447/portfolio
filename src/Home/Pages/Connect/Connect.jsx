@@ -104,7 +104,7 @@ const Connect = () => {
       >
         <div className="flex items-center gap-2 mb-4">
           <MdMarkEmailUnread className="size-6 text-red-400" />
-          <h2 className="text-lg font-bold">Send a mail</h2>
+          <h2 className="text-lg font-bold">Write an email</h2>
         </div>
 
         <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
