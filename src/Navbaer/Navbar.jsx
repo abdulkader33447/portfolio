@@ -60,37 +60,49 @@ const Navbar = () => {
       <div className="navbar items-center justify-center">
         <div>
           <ul className="flex items-center justify-center gap-7 sm:hidden text-2xl">
-            <li data-aos="fade" data-aos-duration="500">
-              <button onClick={() => handleScrollTo("home")}>
-                <IoHome />
-              </button>
+            <li
+              data-aos="fade"
+              data-aos-duration="500"
+              onClick={() => handleScrollTo("home")}
+            >
+              <IoHome />
             </li>
-            <li data-aos="fade" data-aos-duration="1000">
-              <button onClick={() => handleScrollTo("about")}>
-                <IoPerson />
-              </button>
+            <li
+              data-aos="fade"
+              data-aos-duration="1000"
+              onClick={() => handleScrollTo("about")}
+            >
+              <IoPerson />
             </li>
-            <li data-aos="fade" data-aos-duration="1500">
-              <button onClick={() => handleScrollTo("skills")}>
-                <IoConstruct />
-              </button>
+            <li
+              data-aos="fade"
+              data-aos-duration="1500"
+              onClick={() => handleScrollTo("skills")}
+            >
+              <IoConstruct />
             </li>
-            <li data-aos="fade" data-aos-duration="2000">
-              <button onClick={() => handleScrollTo("projects")}>
-                <IoRocket />
-              </button>
+            <li
+              data-aos="fade"
+              data-aos-duration="2000"
+              onClick={() => handleScrollTo("projects")}
+            >
+              <IoRocket />
             </li>
-            <li data-aos="fade" data-aos-duration="2500">
-              <button onClick={() => handleScrollTo("journey")}>
-                <GiJourney />
-              </button>
+            <li
+              data-aos="fade"
+              data-aos-duration="2500"
+              onClick={() => handleScrollTo("journey")}
+            >
+              <GiJourney />
             </li>
-            <li data-aos="fade" data-aos-duration="3000">
-              <button onClick={() => handleScrollTo("download")}>
-                <a href={cvLink} target="_blank">
-                  <PiDownloadFill />
-                </a>
-              </button>
+            <li
+              data-aos="fade"
+              data-aos-duration="3000"
+              onClick={() => handleScrollTo("download")}
+            >
+              <a href={cvLink} target="_blank">
+                <PiDownloadFill />
+              </a>
             </li>
           </ul>
         </div>
