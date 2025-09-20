@@ -4,6 +4,7 @@ import Swal from "sweetalert2";
 import { MdEmail, MdMarkEmailUnread } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { RiLinkedinBoxFill } from "react-icons/ri";
+import "./connect.css";
 
 const Connect = () => {
   const form = useRef();
@@ -58,7 +59,9 @@ const Connect = () => {
       >
         {/* email */}
         <div className="flex items-center justify-start sm:gap-5 gap-3">
-          <span className="bg-[#3b4c74]/50 rounded-full sm:p-2 p-1"><MdEmail className="size-7 text-red-400" /></span>
+          <span className="bg-[#3b4c74]/50 rounded-full sm:p-2 p-1">
+            <MdEmail className="size-7 text-red-400" />
+          </span>
           <a
             href="mailto:abdulkader33447@gmail.com"
             target="_blank"
@@ -70,7 +73,9 @@ const Connect = () => {
 
         {/* whatsapp */}
         <div className="flex items-center justify-start gap-5">
-          <span className="bg-[#3b4c74]/50 rounded-full sm:p-2 p-1"><IoLogoWhatsapp className="size-7 text-[#2ACF49]" /></span>
+          <span className="bg-[#3b4c74]/50 rounded-full sm:p-2 p-1">
+            <IoLogoWhatsapp className="size-7 text-[#2ACF49]" />
+          </span>
           <a
             href="https://wa.me/8801568096650"
             target="_blank"
@@ -83,7 +88,9 @@ const Connect = () => {
 
         {/* linkedin */}
         <div className="flex items-center justify-start gap-5">
-          <span className="bg-[#3b4c74]/50 rounded-full sm:p-2 p-1"><RiLinkedinBoxFill className="size-7 text-[#086BC9]" /></span>
+          <span className="bg-[#3b4c74]/50 rounded-full sm:p-2 p-1">
+            <RiLinkedinBoxFill className="size-7 text-[#086BC9]" />
+          </span>
           <a
             href="https://www.linkedin.com/in/abdul-kader-80a7a5350"
             target="_blank"
@@ -127,8 +134,9 @@ const Connect = () => {
             placeholder="Your Message"
             rows="4"
             required
-            className="textarea input focus:border-none focus:outline-none focus:ring-2 focus:ring-[#3b4c74] shadow-none focus:shadow-none border-none  w-full rounded-lg bg-[#1e2a47] transition duration-500"
+            className="textarea input focus:border-none focus:outline-none focus:ring-2 focus:ring-[#3b4c74] shadow-none border-none w-full rounded-lg bg-[#1e2a47] transition duration-500 resize-y overflow-auto"
           />
+
           <button
             type="submit"
             className="button rounded-xl hover:border-[#3b4c74] transition duration-700 sm:text-[16px] text-sm w-full"

@@ -1,0 +1,12 @@
+/* Prevent Grammarly injection from breaking layout */
+textarea {
+  overflow: auto !important;
+  resize: vertical; /* optional: allow only vertical resize */
+}
+
+/* Grammarly overlay hide fix */
+grammarly-extension,
+grammarly-desktop-integration {
+  display: none !important;
+  max-width: 100% !important;
+}
