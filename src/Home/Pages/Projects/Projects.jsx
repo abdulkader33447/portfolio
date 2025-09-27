@@ -84,7 +84,7 @@ const Projects = () => {
                 <a
                   data-aos="fade"
                   data-aos-duration="2500"
-                  href="https://github.com/abdulkader33447/a10-hobby-hub-client"
+                  href="https://github.com/abdulkader33447/a12-client-side"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub Client Repo"
