@@ -4,6 +4,7 @@ import Navbar from "../Navbaer/Navbar";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Lenis from "@studio-freight/lenis";
+import FloatingBtn from "../Home/FloatinBtn/FloatingBtn";
 
 export const LenisContext = createContext(null);
 
@@ -50,6 +51,7 @@ const RootLayout = () => {
 
         <Navbar />
         <Outlet />
+        <FloatingBtn />
       </div>
     </LenisContext.Provider>
   );
