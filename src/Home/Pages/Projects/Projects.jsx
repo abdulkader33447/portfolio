@@ -19,7 +19,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className=" mx-auto text-center lg:mt-40 md:mt-30 mt-20 lg:scroll-mt-40 md:scroll-mt-35 scroll-mt-25"
+      className="mx-auto text-center lg:mt-40 md:mt-30 mt-20 lg:scroll-mt-40 md:scroll-mt-35 scroll-mt-25"
     >
       <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold">
         <span data-aos="fade" data-aos-duration="1000">

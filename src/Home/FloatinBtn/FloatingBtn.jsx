@@ -9,7 +9,7 @@ const FloatingBtn = () => {
         rel="noopener noreferrer"
         className="fixed bottom-5 right-5 bg-green-500 rounded-full p-3 shadow-lg hover:bg-green-600 transition duration-500"
       >
-        <IoLogoWhatsapp className="sm:text-4xl text-3xl"/>
+        <IoLogoWhatsapp className="sm:text-4xl text-3xl" />
       </a>
     </div>
   );

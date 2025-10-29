@@ -49,101 +49,106 @@ const Connect = () => {
   };
 
   return (
-    <div className="sm:flex items-center justify-center sm:gap-10 gap-5">
-      {/* left */}
-      <div
-        id="connect"
-        data-aos="fade"
-        data-aos-duration="1000"
-        className="sm:mr-0 mx-auto text-center lg:mt-40 md:mt-30 mt-20 lg:scroll-mt-40 md:scroll-mt-35 scroll-mt-25 border border-[#3b4c74]/50 bg-[#1e2a47]/30 backdrop-blur-lg rounded-2xl sm:p-6 p-4 shadow-md  w-11/12 sm:w-xl space-y-5"
-      >
-        {/* email */}
-        <div className="flex items-center justify-start sm:gap-5 gap-3">
-          <span className="bg-[#3b4c74]/50 rounded-full sm:p-2 p-1">
-            <MdEmail className="size-7 text-red-400" />
-          </span>
-          <a
-            href="mailto:abdulkader33447@gmail.com"
-            target="_blank"
-            className="text-blue-400 underline"
-          >
-            abdulkader33447@gmail.com
-          </a>
+    <div className="lg:mt-40 md:mt-30 mt-20">
+      <h1 className="text-center lg:text-5xl md:text-4xl text-2xl font-semibold">
+        Let's Contact
+      </h1>
+      <div className="lg:mt-15 mt-10 sm:flex items-center justify-center sm:gap-10 gap-5">
+        {/* left */}
+        <div
+          id="connect"
+          data-aos="fade"
+          data-aos-duration="1000"
+          className="sm:mr-0 mx-auto text-center lg:scroll-mt-40 md:scroll-mt-35 scroll-mt-25 border border-[#3b4c74]/50 bg-[#1e2a47]/30 backdrop-blur-lg rounded-2xl sm:p-6 p-4 shadow-md  w-11/12 sm:w-xl space-y-5"
+        >
+          {/* email */}
+          <div className="flex items-center justify-start sm:gap-5 gap-3">
+            <span className="bg-[#3b4c74]/50 rounded-full sm:p-2 p-1">
+              <MdEmail className="size-7 text-red-400" />
+            </span>
+            <a
+              href="mailto:abdulkader33447@gmail.com"
+              target="_blank"
+              className="text-blue-400 underline"
+            >
+              abdulkader33447@gmail.com
+            </a>
+          </div>
+
+          {/* whatsapp */}
+          <div className="flex items-center justify-start gap-5">
+            <span className="bg-[#3b4c74]/50 rounded-full sm:p-2 p-1">
+              <IoLogoWhatsapp className="size-7 text-[#2ACF49]" />
+            </span>
+            <a
+              href="https://wa.me/8801568096650"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 underline"
+            >
+              +8801568096650
+            </a>
+          </div>
+
+          {/* linkedin */}
+          <div className="flex items-center justify-start gap-5">
+            <span className="bg-[#3b4c74]/50 rounded-full sm:p-2 p-1">
+              <RiLinkedinBoxFill className="size-7 text-[#086BC9]" />
+            </span>
+            <a
+              href="https://www.linkedin.com/in/abdul-kader-80a7a5350"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 underline"
+            >
+              Linkedin
+            </a>
+          </div>
         </div>
 
-        {/* whatsapp */}
-        <div className="flex items-center justify-start gap-5">
-          <span className="bg-[#3b4c74]/50 rounded-full sm:p-2 p-1">
-            <IoLogoWhatsapp className="size-7 text-[#2ACF49]" />
-          </span>
-          <a
-            href="https://wa.me/8801568096650"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-400 underline"
-          >
-            +8801568096650
-          </a>
+        {/* right */}
+        <div
+          id="connect"
+          data-aos="fade"
+          data-aos-duration="1000"
+          className="sm:ml-0 mx-auto text-center lg:scroll-mt-40 md:scroll-mt-35 scroll-mt-25 border border-[#3b4c74]/50 bg-[#1e2a47]/30 backdrop-blur-lg rounded-2xl sm:p-6 p-4 shadow-md  w-11/12 sm:w-xl"
+        >
+          <div className="flex items-center gap-2 mb-4">
+            <MdMarkEmailUnread className="size-6 text-red-400" />
+            <h2 className="text-lg font-bold">Write an email</h2>
+          </div>
+
+          <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
+            <input
+              type="text"
+              name="from_name"
+              placeholder="Your Name"
+              required
+              className="input focus:border-none focus:outline-none focus:ring-2 focus:ring-[#3b4c74] shadow-none focus:shadow-none border-none  w-full rounded-lg bg-[#1e2a47] transition duration-500"
+            />
+            <input
+              type="email"
+              name="from_email"
+              placeholder="Your Email"
+              required
+              className="input focus:border-none focus:outline-none focus:ring-2 focus:ring-[#3b4c74] shadow-none focus:shadow-none border-none  w-full rounded-lg bg-[#1e2a47] transition duration-500"
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="4"
+              required
+              className="textarea input focus:border-none focus:outline-none focus:ring-2 focus:ring-[#3b4c74] shadow-none border-none w-full rounded-lg bg-[#1e2a47] transition duration-500 resize-y overflow-auto"
+            />
+
+            <button
+              type="submit"
+              className="button rounded-xl hover:border-[#3b4c74] transition duration-700 sm:text-[16px] text-sm w-full"
+            >
+              Send Message
+            </button>
+          </form>
         </div>
-
-        {/* linkedin */}
-        <div className="flex items-center justify-start gap-5">
-          <span className="bg-[#3b4c74]/50 rounded-full sm:p-2 p-1">
-            <RiLinkedinBoxFill className="size-7 text-[#086BC9]" />
-          </span>
-          <a
-            href="https://www.linkedin.com/in/abdul-kader-80a7a5350"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-400 underline"
-          >
-            Linkedin
-          </a>
-        </div>
-      </div>
-
-      {/* right */}
-      <div
-        id="connect"
-        data-aos="fade"
-        data-aos-duration="1000"
-        className="sm:ml-0 mx-auto text-center lg:mt-40 md:mt-30 mt-10 lg:scroll-mt-40 md:scroll-mt-35 scroll-mt-25 border border-[#3b4c74]/50 bg-[#1e2a47]/30 backdrop-blur-lg rounded-2xl sm:p-6 p-4 shadow-md  w-11/12 sm:w-xl"
-      >
-        <div className="flex items-center gap-2 mb-4">
-          <MdMarkEmailUnread className="size-6 text-red-400" />
-          <h2 className="text-lg font-bold">Write an email</h2>
-        </div>
-
-        <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
-          <input
-            type="text"
-            name="from_name"
-            placeholder="Your Name"
-            required
-            className="input focus:border-none focus:outline-none focus:ring-2 focus:ring-[#3b4c74] shadow-none focus:shadow-none border-none  w-full rounded-lg bg-[#1e2a47] transition duration-500"
-          />
-          <input
-            type="email"
-            name="from_email"
-            placeholder="Your Email"
-            required
-            className="input focus:border-none focus:outline-none focus:ring-2 focus:ring-[#3b4c74] shadow-none focus:shadow-none border-none  w-full rounded-lg bg-[#1e2a47] transition duration-500"
-          />
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            rows="4"
-            required
-            className="textarea input focus:border-none focus:outline-none focus:ring-2 focus:ring-[#3b4c74] shadow-none border-none w-full rounded-lg bg-[#1e2a47] transition duration-500 resize-y overflow-auto"
-          />
-
-          <button
-            type="submit"
-            className="button rounded-xl hover:border-[#3b4c74] transition duration-700 sm:text-[16px] text-sm w-full"
-          >
-            Send Message
-          </button>
-        </form>
       </div>
     </div>
   );
