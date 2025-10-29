@@ -49,11 +49,11 @@ const Connect = () => {
   };
 
   return (
-    <div className="lg:mt-40 md:mt-30 mt-20">
+    <div className="md:px-5 lg:mt-40 md:mt-30 mt-20">
       <h1 className="text-center lg:text-5xl md:text-4xl text-2xl font-semibold">
         Let's Contact
       </h1>
-      <div className="lg:mt-15 mt-10 sm:flex items-center justify-center sm:gap-10 gap-5">
+      <div className="lg:mt-15 mt-10 lg:flex block lg:space-y-none space-y-5 items-center justify-center lg:gap-10 gap-5">
         {/* left */}
         <div
           id="connect"
