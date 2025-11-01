@@ -10,8 +10,7 @@ const Hero = () => {
         <h1
           data-aos="fade"
           data-aos-duration="3000"
-          className="lg:text-8xl md:text-6xl text-[34px] font-semibold"
-        >
+          className="lg:text-8xl md:text-6xl text-[34px] font-semibold">
           <span data-aos="fade" data-aos-duration="500">
             Hey,
           </span>{" "}
@@ -31,8 +30,7 @@ const Hero = () => {
         <p
           data-aos="fade"
           data-aos-duration="2500"
-          className="lg:mt-10 md:mt-7 mt-5 lg:text-2xl md:text-xl xl:px-40 lg:px-11 px-6"
-        >
+          className="lg:mt-10 md:mt-7 mt-5 lg:text-2xl md:text-xl xl:px-40 lg:px-11 px-6">
           <span data-aos="fade" data-aos-duration="1000">
             I design and build modern,
           </span>{" "}
@@ -57,8 +55,7 @@ const Hero = () => {
                 .getElementById("projects")
                 .scrollIntoView({ behavior: "smooth" });
             }}
-            className="button rounded-xl hover:border-[#3b4c74] transition duration-700 sm:text-[16px] text-sm"
-          >
+            className="button rounded-xl hover:border-[#3b4c74] transition duration-700 sm:text-[16px] text-sm">
             <span data-aos="fade" data-aos-duration="2000">
               See
             </span>{" "}
@@ -79,8 +76,7 @@ const Hero = () => {
                 .getElementById("connect")
                 .scrollIntoView({ behavior: "smooth" });
             }}
-            className="button flex rounded-xl hover:border-[#3b4c74] transition duration-700 sm:text-[16px] text-sm"
-          >
+            className="button flex rounded-xl hover:border-[#3b4c74] transition duration-700 sm:text-[16px] text-sm">
             <span data-aos="fade" data-aos-duration="3000">
               Let’s
             </span>{" "}

@@ -55,51 +55,44 @@ const Navbar = () => {
     <div
       className={`fixed top-0 left-0 right-0 mt-5 z-50 sm:w-fit w-[307px] mx-auto border border-[#3b4c74] rounded-2xl transition-all duration-500 backdrop-blur-md ${
         scrolled ? "bg-[#1e2a47]/60 shadow-lg" : "bg-transparent"
-      }`}
-    >
+      }`}>
       <div className="navbar items-center justify-center">
         <div>
           <ul className="flex items-center justify-center gap-7 sm:hidden text-2xl">
             <li
               data-aos="fade"
               data-aos-duration="500"
-              onClick={() => handleScrollTo("home")}
-            >
+              onClick={() => handleScrollTo("home")}>
               <IoHome />
             </li>
             <li
               data-aos="fade"
               data-aos-duration="1000"
-              onClick={() => handleScrollTo("about")}
-            >
+              onClick={() => handleScrollTo("about")}>
               <IoPerson />
             </li>
             <li
               data-aos="fade"
               data-aos-duration="1500"
-              onClick={() => handleScrollTo("skills")}
-            >
+              onClick={() => handleScrollTo("skills")}>
               <IoConstruct />
             </li>
             <li
               data-aos="fade"
               data-aos-duration="2000"
-              onClick={() => handleScrollTo("projects")}
-            >
+              onClick={() => handleScrollTo("projects")}>
               <IoRocket />
             </li>
             <li
               data-aos="fade"
               data-aos-duration="2500"
-              onClick={() => handleScrollTo("journey")}
-            >
+              onClick={() => handleScrollTo("journey")}>
               <GiJourney />
             </li>
             <li
               data-aos="fade"
               data-aos-duration="3000"
-              onClick={() => handleScrollTo("download")}
-            >
+              onClick={() => handleScrollTo("download")}>
               <a href={cvLink} target="_blank">
                 <PiDownloadFill />
               </a>
@@ -117,15 +110,13 @@ const Navbar = () => {
                       href={cvLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:bg-transparent hover:text-[#aebbda] transition duration-700"
-                    >
+                      className="hover:bg-transparent hover:text-[#aebbda] transition duration-700">
                       {label}
                     </a>
                   ) : (
                     <button
                       className="hover:bg-transparent hover:text-[#aebbda] transition duration-700"
-                      onClick={() => handleScrollTo(id)}
-                    >
+                      onClick={() => handleScrollTo(id)}>
                       {label}
                     </button>
                   )}
