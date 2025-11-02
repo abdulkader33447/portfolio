@@ -51,7 +51,18 @@ const Connect = () => {
   return (
     <div className="md:px-5 lg:mt-40 md:mt-30 mt-20">
       <h1 className="text-center lg:text-5xl md:text-4xl text-2xl font-semibold">
-        Let's Contact
+        <span data-aos="fade" data-aos-duration="1000">
+          Let
+        </span>
+        <span data-aos="fade" data-aos-duration="1500">
+          's
+        </span>{" "}
+        <span data-aos="fade" data-aos-duration="2000">
+          Con
+        </span>
+        <span data-aos="fade" data-aos-duration="2500">
+          tact
+        </span>
       </h1>
       <p className="text-center lg:mt-15 mt-10 lg:text-2xl md:text-xl xl:px-80 lg:px-11 px-4">
         <span data-aos="fade" data-aos-duration="500">
@@ -66,7 +77,7 @@ const Connect = () => {
         </span>{" "}
         <span data-aos="fade" data-aos-duration="2000">
           new opportunities
-        </span>
+        </span>{" "}
         <span data-aos="fade" data-aos-duration="2500">
           and collaborations.
         </span>
