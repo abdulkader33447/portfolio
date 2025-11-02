@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import Lenis from "@studio-freight/lenis";
 import FloatingBtn from "../Home/FloatinBtn/FloatingBtn";
 
-export const LenisContext = createContext(null);
+export const LenisContext = createContext  (null);
 
 const RootLayout = () => {
   const [lenis, setLenis] = useState(null);

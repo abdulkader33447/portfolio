@@ -9,18 +9,19 @@ import {
   SiFramer,
   SiMongodb,
   SiTailwindcss,
+  SiTypescript,
 } from "react-icons/si";
 import imgOne from "../../../assets/earnly-1f981.web.app_ (1).png";
 import imgTwo from "../../../assets/artifacts-vault.web.app_.png";
 import imgThree from "../../../assets/hobby-hub-app.web.app_.png";
 import imgFour from "../../../assets/shiritori.png";
+import imgFive from "../../../assets/Screenshot from 2025-11-02 17-07-12.png";
 
 const Projects = () => {
   return (
     <div
       id="projects"
-      className="mx-auto text-center lg:mt-40 md:mt-30 mt-20 lg:scroll-mt-40 md:scroll-mt-35 scroll-mt-25"
-    >
+      className="mx-auto text-center lg:mt-40 md:mt-30 mt-20 lg:scroll-mt-40 md:scroll-mt-35 scroll-mt-25">
       <h1 className="lg:text-5xl md:text-4xl text-2xl font-semibold">
         <span data-aos="fade" data-aos-duration="1000">
           MY
@@ -62,7 +63,7 @@ const Projects = () => {
         {/* card one */}
         <div className="card rounded-2xl bg-[#1e2a47]/50 backdrop-blur-lg border border-[#3b4c74]/50 shadow-sm">
           <figure data-aos="fade" data-aos-duration="2000">
-            <img src={imgOne} alt="Earnly" />
+            <img src={imgOne} alt="Earnly" className="object-cover w-full h-60 lg:h-72 md:h-64 transition-transform duration-500 hover:scale-105"/>
           </figure>
           <div className="card-body">
             <h2 className="card-title lg:text-lg text-sm justify-between">
@@ -77,8 +78,7 @@ const Projects = () => {
                   data-aos-duration="2000"
                   href="https://earnly-1f981.web.app/"
                   target="_blank"
-                  className="text-sm flex items-center gap-2 sm:ml-5 ml-1"
-                >
+                  className="text-sm flex items-center gap-2 sm:ml-5 ml-1">
                   Live <LuArrowUpRight />
                 </a>
                 <a
@@ -88,8 +88,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub Client Repo"
-                  className="flex items-center gap-2 text-sm"
-                >
+                  className="flex items-center gap-2 text-sm">
                   <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />{" "}
                   <span>Client</span>
                 </a>
@@ -120,8 +119,7 @@ const Projects = () => {
                 href="https://react.dev/"
                 target="_blank"
                 className="float-chain"
-                style={{ animationDelay: "0s" }}
-              >
+                style={{ animationDelay: "0s" }}>
                 <FaReact
                   key="react"
                   className="text-blue-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
@@ -134,8 +132,7 @@ const Projects = () => {
                 href="https://tailwindcss.com/"
                 target="_blank"
                 className="float-chain"
-                style={{ animationDelay: "0.5s" }}
-              >
+                style={{ animationDelay: "0.5s" }}>
                 <SiTailwindcss
                   key="tailwind"
                   className="text-cyan-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
@@ -148,8 +145,7 @@ const Projects = () => {
                 href="https://daisyui.com/"
                 target="_blank"
                 className="float-chain"
-                style={{ animationDelay: "1s" }}
-              >
+                style={{ animationDelay: "1s" }}>
                 <SiDaisyui
                   key="daisyui"
                   className="text-purple-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
@@ -162,8 +158,7 @@ const Projects = () => {
                 href="https://firebase.google.com/"
                 target="_blank"
                 className="float-chain"
-                style={{ animationDelay: "1.5s" }}
-              >
+                style={{ animationDelay: "1.5s" }}>
                 <SiFirebase
                   key="firebase"
                   className="text-yellow-500 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
@@ -176,8 +171,7 @@ const Projects = () => {
                 href="https://expressjs.com/"
                 target="_blank"
                 className="float-chain"
-                style={{ animationDelay: "2s" }}
-              >
+                style={{ animationDelay: "2s" }}>
                 <SiExpress
                   key="express"
                   className="text-gray-300 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
@@ -190,8 +184,7 @@ const Projects = () => {
                 href="https://www.mongodb.com/"
                 target="_blank"
                 className="float-chain"
-                style={{ animationDelay: "2.5s" }}
-              >
+                style={{ animationDelay: "2.5s" }}>
                 <SiMongodb
                   key="mongodb"
                   className="text-green-500 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
@@ -204,7 +197,7 @@ const Projects = () => {
         {/* card two */}
         <div className="card rounded-2xl bg-[#1e2a47]/50 backdrop-blur-lg border border-[#3b4c74]/50 shadow-sm">
           <figure data-aos="fade" data-aos-duration="2000">
-            <img src={imgTwo} alt="Artifacts Vault" />
+            <img src={imgTwo} alt="Artifacts Vault" className="object-cover w-full h-60 lg:h-72 md:h-64 transition-transform duration-500 hover:scale-105"/>
           </figure>
           <div className="card-body">
             <h2 className="card-title lg:text-lg text-sm justify-between">
@@ -219,8 +212,7 @@ const Projects = () => {
                   data-aos-duration="2000"
                   href="https://artifacts-vault.web.app/"
                   target="_blank"
-                  className="text-sm flex items-center gap-2 sm:ml-5 ml-1"
-                >
+                  className="text-sm flex items-center gap-2 sm:ml-5 ml-1">
                   Live <LuArrowUpRight />
                 </a>
                 <a
@@ -230,8 +222,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub Client Repo"
-                  className="flex items-center gap-2 text-sm"
-                >
+                  className="flex items-center gap-2 text-sm">
                   <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />{" "}
                   <span>Client</span>
                 </a>
@@ -261,8 +252,7 @@ const Projects = () => {
                 href="https://react.dev/"
                 target="_blank"
                 className="float-chain"
-                style={{ animationDelay: "0s" }}
-              >
+                style={{ animationDelay: "0s" }}>
                 <FaReact
                   key="react"
                   className="text-blue-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
@@ -274,8 +264,7 @@ const Projects = () => {
                 href="https://tailwindcss.com/"
                 target="_blank"
                 className="float-chain"
-                style={{ animationDelay: "0.5s" }}
-              >
+                style={{ animationDelay: "0.5s" }}>
                 <SiTailwindcss
                   key="tailwind"
                   className="text-cyan-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
@@ -288,18 +277,15 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="float-chain"
-                style={{ animationDelay: "1s" }}
-              >
+                style={{ animationDelay: "1s" }}>
                 <div
                   className="xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1 flex items-center justify-center"
-                  style={{ backgroundColor: "#A5DC86" }}
-                >
+                  style={{ backgroundColor: "#A5DC86" }}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
                     fill="white"
-                    className="sm:h-8 h-6 sm:w-8 w-6"
-                  >
+                    className="sm:h-8 h-6 sm:w-8 w-6">
                     <path d="M256 48l40.2 122.8h129.2l-104.6 76.1L360 369.2 256 293.8l-104 75.4 39.2-122.4L86.6 170.8h129.2z" />
                   </svg>
                 </div>
@@ -311,8 +297,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="float-chain"
-                style={{ animationDelay: "1.5s" }}
-              >
+                style={{ animationDelay: "1.5s" }}>
                 <SiFramer
                   key="framer-motion"
                   style={{ color: "#0055FF" }}
@@ -325,8 +310,7 @@ const Projects = () => {
                 href="https://www.mongodb.com/"
                 target="_blank"
                 className="float-chain"
-                style={{ animationDelay: "2s" }}
-              >
+                style={{ animationDelay: "2s" }}>
                 <SiMongodb
                   key="mongodb"
                   className="text-green-500 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
@@ -339,8 +323,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="float-chain"
-                style={{ color: "#ECD53F", animationDelay: "2.5s" }}
-              >
+                style={{ color: "#ECD53F", animationDelay: "2.5s" }}>
                 <SiDotenv
                   key="dotenv"
                   className="xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
@@ -353,7 +336,11 @@ const Projects = () => {
         {/* card three */}
         <div className="card rounded-2xl bg-[#1e2a47]/50 backdrop-blur-lg border border-[#3b4c74]/50 shadow-sm">
           <figure data-aos="fade" data-aos-duration="2000">
-            <img src={imgThree} alt="Hobby Hub" />
+            <img
+              src={imgThree}
+              alt="Hobby Hub"
+              className="object-cover w-full h-60 lg:h-72 md:h-64 transition-transform duration-500 hover:scale-105"
+            />
           </figure>
           <div className="card-body">
             <h2 className="card-title lg:text-lg text-sm justify-between">
@@ -368,8 +355,7 @@ const Projects = () => {
                   data-aos-duration="2000"
                   href="https://hobby-hub-app.web.app/"
                   target="_blank"
-                  className="text-sm flex items-center gap-2 sm:ml-5 ml-1"
-                >
+                  className="text-sm flex items-center gap-2 sm:ml-5 ml-1">
                   Live <LuArrowUpRight />
                 </a>
                 <a
@@ -379,8 +365,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub Client Repo"
-                  className="flex items-center gap-2 text-sm"
-                >
+                  className="flex items-center gap-2 text-sm">
                   <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />{" "}
                   <span>Client</span>
                 </a>
@@ -411,8 +396,7 @@ const Projects = () => {
                 href="https://react.dev/"
                 target="_blank"
                 className="float-chain"
-                style={{ animationDelay: "0s" }}
-              >
+                style={{ animationDelay: "0s" }}>
                 <FaReact
                   key="react"
                   className="text-blue-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
@@ -424,8 +408,7 @@ const Projects = () => {
                 href="https://tailwindcss.com/"
                 target="_blank"
                 className="float-chain"
-                style={{ animationDelay: "0.5s" }}
-              >
+                style={{ animationDelay: "0.5s" }}>
                 <SiTailwindcss
                   key="tailwind"
                   className="text-cyan-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
@@ -437,8 +420,7 @@ const Projects = () => {
                 href="https://firebase.google.com/"
                 target="_blank"
                 className="float-chain"
-                style={{ animationDelay: "1s" }}
-              >
+                style={{ animationDelay: "1s" }}>
                 <SiFirebase
                   key="firebase"
                   className="text-yellow-500 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
@@ -450,8 +432,7 @@ const Projects = () => {
                 href="https://daisyui.com/"
                 target="_blank"
                 className="float-chain"
-                style={{ animationDelay: "1.5s" }}
-              >
+                style={{ animationDelay: "1.5s" }}>
                 <SiDaisyui
                   key="daisyui"
                   className="text-purple-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
@@ -463,8 +444,7 @@ const Projects = () => {
                 href="https://www.mongodb.com/"
                 target="_blank"
                 className="float-chain"
-                style={{ animationDelay: "2s" }}
-              >
+                style={{ animationDelay: "2s" }}>
                 <SiMongodb
                   key="mongodb"
                   className="text-green-500 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
@@ -477,8 +457,7 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="float-chain"
-                style={{ color: "#ECD53F", animationDelay: "2.5s" }}
-              >
+                style={{ color: "#ECD53F", animationDelay: "2.5s" }}>
                 <SiDotenv
                   key="dotenv"
                   className="xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
@@ -491,7 +470,11 @@ const Projects = () => {
         {/* card four */}
         <div className="card rounded-2xl bg-[#1e2a47]/50 backdrop-blur-lg border border-[#3b4c74]/50 shadow-sm">
           <figure data-aos="fade" data-aos-duration="2000">
-            <img src={imgFour} alt="Shiritori" />
+            <img
+              src={imgFour}
+              alt="Shiritori"
+              className="object-cover w-full h-60 lg:h-72 md:h-64 transition-transform duration-500 hover:scale-105"
+            />
           </figure>
           <div className="card-body">
             <h2 className="card-title lg:text-lg text-sm justify-between">
@@ -506,8 +489,7 @@ const Projects = () => {
                   data-aos-duration="2000"
                   href="https://englishshiritori.vercel.app/"
                   target="_blank"
-                  className="text-sm flex items-center gap-2 sm:ml-5 ml-1"
-                >
+                  className="text-sm flex items-center gap-2 sm:ml-5 ml-1">
                   Live <LuArrowUpRight />
                 </a>
                 <a
@@ -517,8 +499,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub Client Repo"
-                  className="flex items-center gap-2 text-sm"
-                >
+                  className="flex items-center gap-2 text-sm">
                   <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />{" "}
                   <span>Github Repo</span>
                 </a>
@@ -554,8 +535,7 @@ const Projects = () => {
                 href="https://react.dev/"
                 target="_blank"
                 className="float-chain"
-                style={{ animationDelay: "0s" }}
-              >
+                style={{ animationDelay: "0s" }}>
                 <FaReact
                   key="react"
                   className="text-blue-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
@@ -567,8 +547,7 @@ const Projects = () => {
                 href="https://tailwindcss.com/"
                 target="_blank"
                 className="float-chain"
-                style={{ animationDelay: "0.5s" }}
-              >
+                style={{ animationDelay: "0.5s" }}>
                 <SiTailwindcss
                   key="tailwind"
                   className="text-cyan-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
@@ -593,8 +572,7 @@ const Projects = () => {
                 href="https://daisyui.com/"
                 target="_blank"
                 className="float-chain"
-                style={{ animationDelay: "1.5s" }}
-              >
+                style={{ animationDelay: "1.5s" }}>
                 <SiDaisyui
                   key="daisyui"
                   className="text-purple-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
@@ -627,6 +605,140 @@ const Projects = () => {
                   className="xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
                 />
               </a> */}
+            </div>
+          </div>
+        </div>
+
+        {/* card five */}
+        <div className="card rounded-2xl bg-[#1e2a47]/50 backdrop-blur-lg border border-[#3b4c74]/50 shadow-sm">
+          <figure data-aos="fade" data-aos-duration="2000" className="relative">
+            <img
+              src={imgFive}
+              alt="Hobby Hub"
+              className="object-cover w-full h-60 lg:h-72 md:h-64 transition-transform duration-500 hover:scale-105"
+            />
+            <h3 className="absolute top-2 right-4 bg-[#054aec]/70 backdrop-blur-lg border border-[#5885ee]/70 py-1 px-3 rounded-full">Team Project</h3>
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title lg:text-lg text-sm justify-between">
+              <span data-aos="fade" data-aos-duration="1000">
+                Codeclash
+              </span>
+
+              {/* Live + GitHub links group */}
+              <div className="flex items-center gap-2">
+                <a
+                  data-aos="fade"
+                  data-aos-duration="2000"
+                  href="https://code-clash-d9152.web.app/"
+                  target="_blank"
+                  className="text-sm flex items-center gap-2 sm:ml-5 ml-1">
+                  Live <LuArrowUpRight />
+                </a>
+                <a
+                  data-aos="fade"
+                  data-aos-duration="2500"
+                  href="https://github.com/fakhrulsipon/codeClash_client"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub Client Repo"
+                  className="flex items-center gap-2 text-sm">
+                  <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />{" "}
+                  <span>Client</span>
+                </a>
+                {/* <a
+                  data-aos="fade"
+                  data-aos-duration="3000"
+                  href="https://github.com/abdulkader33447/a10-hobby-hub-server"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub Server Repo"
+                  className="flex items-center gap-2 text-sm"
+                >
+                  <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />{" "}
+                  <span>Server</span>
+                </a> */}
+              </div>
+            </h2>
+            <p data-aos="fade" data-aos-duration="2500" className="text-start">
+              Master competitive programming with our cutting-edge platform.
+              Solve real challenges, join live contests, and elevate your coding
+              skills to new heights.
+            </p>
+            <div className="card-actions justify-between sm:mt-5 mt-3">
+              <a
+                data-aos="fade"
+                data-aos-duration="500"
+                href="https://react.dev/"
+                target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "0s" }}>
+                <FaReact
+                  key="react"
+                  className="text-blue-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
+                />
+              </a>
+              <a
+                data-aos="fade"
+                data-aos-duration="1000"
+                href="https://tailwindcss.com/"
+                target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "0.5s" }}>
+                <SiTailwindcss
+                  key="tailwind"
+                  className="text-cyan-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
+                />
+              </a>
+              <a
+                data-aos="fade"
+                data-aos-duration="1500"
+                href="https://firebase.google.com/"
+                target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "1s" }}>
+                <SiFirebase
+                  key="firebase"
+                  className="text-yellow-500 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
+                />
+              </a>
+              <a
+                data-aos="fade"
+                data-aos-duration="2000"
+                href="https://daisyui.com/"
+                target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "1.5s" }}>
+                <SiTypescript
+                  key="daisyui"
+                  className="text-blue-600 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
+                />
+              </a>
+              <a
+                data-aos="fade"
+                data-aos-duration="2500"
+                href="https://www.mongodb.com/"
+                target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "2s" }}>
+                <SiMongodb
+                  key="mongodb"
+                  className="text-green-500 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
+                />
+              </a>
+              <a
+                data-aos="fade"
+                data-aos-duration="3000"
+                href="https://github.com/motdotla/dotenv"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="float-chain"
+                style={{ color: "#ECD53F", animationDelay: "2.5s" }}>
+                <SiDotenv
+                  key="dotenv"
+                  className="xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
+                />
+              </a>
             </div>
           </div>
         </div>
