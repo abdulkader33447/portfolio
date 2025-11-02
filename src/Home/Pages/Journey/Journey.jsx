@@ -22,6 +22,24 @@ const Journey = () => {
           ney
         </span>
       </h1>
+      <p className="lg:mt-15 mt-10 lg:text-2xl md:text-xl xl:px-80 lg:px-11 px-4">
+        <span data-aos="fade" data-aos-duration="500">
+          A
+        </span>{" "}
+        <span data-aos="fade" data-aos-duration="1000">
+          glimpse
+        </span>
+        <span data-aos="fade" data-aos-duration="1500">
+          {" "}
+          into my growth
+        </span>{" "}
+        <span data-aos="fade" data-aos-duration="2000">
+          and learning
+        </span>
+        <span data-aos="fade" data-aos-duration="2500">
+          path.
+        </span>
+      </p>
 
       <div className="sm:mt-10 mt-7">
         <VerticalTimeline lineColor="#1e2a47">
