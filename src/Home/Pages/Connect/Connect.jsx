@@ -53,14 +53,31 @@ const Connect = () => {
       <h1 className="text-center lg:text-5xl md:text-4xl text-2xl font-semibold">
         Let's Contact
       </h1>
+      <p className="text-center lg:mt-15 mt-10 lg:text-2xl md:text-xl xl:px-80 lg:px-11 px-4">
+        <span data-aos="fade" data-aos-duration="500">
+          Feel free to
+        </span>{" "}
+        <span data-aos="fade" data-aos-duration="1000">
+          reach out — I’m
+        </span>
+        <span data-aos="fade" data-aos-duration="1500">
+          {" "}
+          always open to
+        </span>{" "}
+        <span data-aos="fade" data-aos-duration="2000">
+          new opportunities
+        </span>
+        <span data-aos="fade" data-aos-duration="2500">
+          and collaborations.
+        </span>
+      </p>
       <div className="lg:mt-15 mt-10 lg:flex block lg:space-y-none space-y-5 items-center justify-center lg:gap-10 gap-5">
         {/* left */}
         <div
           id="connect"
           data-aos="fade"
           data-aos-duration="1000"
-          className="sm:mr-0 mx-auto text-center lg:scroll-mt-40 md:scroll-mt-35 scroll-mt-25 border border-[#3b4c74]/50 bg-[#1e2a47]/30 backdrop-blur-lg rounded-2xl sm:p-6 p-4 shadow-md  w-11/12 sm:w-xl space-y-5"
-        >
+          className="sm:mr-0 mx-auto text-center lg:scroll-mt-40 md:scroll-mt-35 scroll-mt-25 border border-[#3b4c74]/50 bg-[#1e2a47]/30 backdrop-blur-lg rounded-2xl sm:p-6 p-4 shadow-md  w-11/12 sm:w-xl space-y-5">
           {/* email */}
           <div className="flex items-center justify-start sm:gap-5 gap-3">
             <span className="bg-[#3b4c74]/50 rounded-full sm:p-2 p-1">
@@ -69,8 +86,7 @@ const Connect = () => {
             <a
               href="mailto:abdulkader33447@gmail.com"
               target="_blank"
-              className="text-blue-400 underline"
-            >
+              className="text-blue-400 underline">
               abdulkader33447@gmail.com
             </a>
           </div>
@@ -84,8 +100,7 @@ const Connect = () => {
               href="https://wa.me/8801568096650"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-400 underline"
-            >
+              className="text-blue-400 underline">
               +8801568096650
             </a>
           </div>
@@ -99,8 +114,7 @@ const Connect = () => {
               href="https://www.linkedin.com/in/abdul-kader-80a7a5350"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-400 underline"
-            >
+              className="text-blue-400 underline">
               Linkedin
             </a>
           </div>
@@ -111,8 +125,7 @@ const Connect = () => {
           id="connect"
           data-aos="fade"
           data-aos-duration="1000"
-          className="sm:ml-0 mx-auto text-center lg:scroll-mt-40 md:scroll-mt-35 scroll-mt-25 border border-[#3b4c74]/50 bg-[#1e2a47]/30 backdrop-blur-lg rounded-2xl sm:p-6 p-4 shadow-md  w-11/12 sm:w-xl"
-        >
+          className="sm:ml-0 mx-auto text-center lg:scroll-mt-40 md:scroll-mt-35 scroll-mt-25 border border-[#3b4c74]/50 bg-[#1e2a47]/30 backdrop-blur-lg rounded-2xl sm:p-6 p-4 shadow-md  w-11/12 sm:w-xl">
           <div className="flex items-center gap-2 mb-4">
             <MdMarkEmailUnread className="size-6 text-red-400" />
             <h2 className="text-lg font-bold">Write an email</h2>
@@ -143,8 +156,7 @@ const Connect = () => {
 
             <button
               type="submit"
-              className="button rounded-xl hover:border-[#3b4c74] transition duration-700 sm:text-[16px] text-sm w-full"
-            >
+              className="button rounded-xl hover:border-[#3b4c74] transition duration-700 sm:text-[16px] text-sm w-full">
               Send Message
             </button>
           </form>
