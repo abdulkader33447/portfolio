@@ -60,10 +60,151 @@ const Projects = () => {
 
       {/* card container */}
       <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 lg:w-8/12 md:w-10/12 w-11/12 mx-auto lg:mt-15 mt-10">
-        {/* card one */}
+
+      {/* card one */}
+        <div className="card rounded-2xl bg-[#1e2a47]/50 backdrop-blur-lg border border-[#3b4c74]/50 shadow-sm">
+          <figure data-aos="fade" data-aos-duration="2000" className="relative">
+            <img
+              src={imgFive}
+              alt="Hobby Hub"
+              className="object-cover w-full h-60 lg:h-72 md:h-64 transition-transform duration-500 hover:scale-105"
+            />
+            <h3 className="absolute top-2 right-4 bg-[#054aec]/70 backdrop-blur-lg border border-[#5885ee]/70 py-1 px-3 rounded-full">
+              Team Project
+            </h3>
+          </figure>
+          <div className="card-body">
+            <h2 className="card-title lg:text-lg text-sm justify-between">
+              <span data-aos="fade" data-aos-duration="1000">
+                Codeclash
+              </span>
+
+              {/* Live + GitHub links group */}
+              <div className="flex items-center gap-2">
+                <a
+                  data-aos="fade"
+                  data-aos-duration="2000"
+                  href="https://code-clash-d9152.web.app/"
+                  target="_blank"
+                  className="text-sm flex items-center gap-2 sm:ml-5 ml-1">
+                  Live <LuArrowUpRight />
+                </a>
+                <a
+                  data-aos="fade"
+                  data-aos-duration="2500"
+                  href="https://github.com/fakhrulsipon/codeClash_client"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub Client Repo"
+                  className="flex items-center gap-2 text-sm">
+                  <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />{" "}
+                  <span>Client</span>
+                </a>
+                {/* <a
+                  data-aos="fade"
+                  data-aos-duration="3000"
+                  href="https://github.com/abdulkader33447/a10-hobby-hub-server"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub Server Repo"
+                  className="flex items-center gap-2 text-sm"
+                >
+                  <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />{" "}
+                  <span>Server</span>
+                </a> */}
+              </div>
+            </h2>
+            <p data-aos="fade" data-aos-duration="2500" className="text-start">
+              Master competitive programming with our cutting-edge platform.
+              Solve real challenges, join live contests, and elevate your coding
+              skills to new heights.
+            </p>
+            <div className="card-actions justify-between sm:mt-5 mt-3">
+              <a
+                data-aos="fade"
+                data-aos-duration="500"
+                href="https://react.dev/"
+                target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "0s" }}>
+                <FaReact
+                  key="react"
+                  className="text-blue-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
+                />
+              </a>
+              <a
+                data-aos="fade"
+                data-aos-duration="1000"
+                href="https://tailwindcss.com/"
+                target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "0.5s" }}>
+                <SiTailwindcss
+                  key="tailwind"
+                  className="text-cyan-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
+                />
+              </a>
+              <a
+                data-aos="fade"
+                data-aos-duration="1500"
+                href="https://firebase.google.com/"
+                target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "1s" }}>
+                <SiFirebase
+                  key="firebase"
+                  className="text-yellow-500 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
+                />
+              </a>
+              <a
+                data-aos="fade"
+                data-aos-duration="2000"
+                href="https://daisyui.com/"
+                target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "1.5s" }}>
+                <SiTypescript
+                  key="daisyui"
+                  className="text-blue-600 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
+                />
+              </a>
+              <a
+                data-aos="fade"
+                data-aos-duration="2500"
+                href="https://www.mongodb.com/"
+                target="_blank"
+                className="float-chain"
+                style={{ animationDelay: "2s" }}>
+                <SiMongodb
+                  key="mongodb"
+                  className="text-green-500 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
+                />
+              </a>
+              <a
+                data-aos="fade"
+                data-aos-duration="3000"
+                href="https://github.com/motdotla/dotenv"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="float-chain"
+                style={{ color: "#ECD53F", animationDelay: "2.5s" }}>
+                <SiDotenv
+                  key="dotenv"
+                  className="xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* card two */}
         <div className="card rounded-2xl bg-[#1e2a47]/50 backdrop-blur-lg border border-[#3b4c74]/50 shadow-sm">
           <figure data-aos="fade" data-aos-duration="2000">
-            <img src={imgOne} alt="Earnly" className="object-cover w-full h-60 lg:h-72 md:h-64 transition-transform duration-500 hover:scale-105"/>
+            <img
+              src={imgOne}
+              alt="Earnly"
+              className="object-cover w-full h-60 lg:h-72 md:h-64 transition-transform duration-500 hover:scale-105"
+            />
           </figure>
           <div className="card-body">
             <h2 className="card-title lg:text-lg text-sm justify-between">
@@ -194,10 +335,14 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* card two */}
+        {/* card three*/}
         <div className="card rounded-2xl bg-[#1e2a47]/50 backdrop-blur-lg border border-[#3b4c74]/50 shadow-sm">
           <figure data-aos="fade" data-aos-duration="2000">
-            <img src={imgTwo} alt="Artifacts Vault" className="object-cover w-full h-60 lg:h-72 md:h-64 transition-transform duration-500 hover:scale-105"/>
+            <img
+              src={imgTwo}
+              alt="Artifacts Vault"
+              className="object-cover w-full h-60 lg:h-72 md:h-64 transition-transform duration-500 hover:scale-105"
+            />
           </figure>
           <div className="card-body">
             <h2 className="card-title lg:text-lg text-sm justify-between">
@@ -333,7 +478,7 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* card three */}
+        {/* card four */}
         <div className="card rounded-2xl bg-[#1e2a47]/50 backdrop-blur-lg border border-[#3b4c74]/50 shadow-sm">
           <figure data-aos="fade" data-aos-duration="2000">
             <img
@@ -467,7 +612,7 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* card four */}
+        {/* card five */}
         <div className="card rounded-2xl bg-[#1e2a47]/50 backdrop-blur-lg border border-[#3b4c74]/50 shadow-sm">
           <figure data-aos="fade" data-aos-duration="2000">
             <img
@@ -610,138 +755,6 @@ const Projects = () => {
         </div>
 
         {/* card five */}
-        <div className="card rounded-2xl bg-[#1e2a47]/50 backdrop-blur-lg border border-[#3b4c74]/50 shadow-sm">
-          <figure data-aos="fade" data-aos-duration="2000" className="relative">
-            <img
-              src={imgFive}
-              alt="Hobby Hub"
-              className="object-cover w-full h-60 lg:h-72 md:h-64 transition-transform duration-500 hover:scale-105"
-            />
-            <h3 className="absolute top-2 right-4 bg-[#054aec]/70 backdrop-blur-lg border border-[#5885ee]/70 py-1 px-3 rounded-full">Team Project</h3>
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title lg:text-lg text-sm justify-between">
-              <span data-aos="fade" data-aos-duration="1000">
-                Codeclash
-              </span>
-
-              {/* Live + GitHub links group */}
-              <div className="flex items-center gap-2">
-                <a
-                  data-aos="fade"
-                  data-aos-duration="2000"
-                  href="https://code-clash-d9152.web.app/"
-                  target="_blank"
-                  className="text-sm flex items-center gap-2 sm:ml-5 ml-1">
-                  Live <LuArrowUpRight />
-                </a>
-                <a
-                  data-aos="fade"
-                  data-aos-duration="2500"
-                  href="https://github.com/fakhrulsipon/codeClash_client"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="GitHub Client Repo"
-                  className="flex items-center gap-2 text-sm">
-                  <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />{" "}
-                  <span>Client</span>
-                </a>
-                {/* <a
-                  data-aos="fade"
-                  data-aos-duration="3000"
-                  href="https://github.com/abdulkader33447/a10-hobby-hub-server"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="GitHub Server Repo"
-                  className="flex items-center gap-2 text-sm"
-                >
-                  <FaGithub className="sm:h-5 h-4 sm:w-5 w-4" />{" "}
-                  <span>Server</span>
-                </a> */}
-              </div>
-            </h2>
-            <p data-aos="fade" data-aos-duration="2500" className="text-start">
-              Master competitive programming with our cutting-edge platform.
-              Solve real challenges, join live contests, and elevate your coding
-              skills to new heights.
-            </p>
-            <div className="card-actions justify-between sm:mt-5 mt-3">
-              <a
-                data-aos="fade"
-                data-aos-duration="500"
-                href="https://react.dev/"
-                target="_blank"
-                className="float-chain"
-                style={{ animationDelay: "0s" }}>
-                <FaReact
-                  key="react"
-                  className="text-blue-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
-                />
-              </a>
-              <a
-                data-aos="fade"
-                data-aos-duration="1000"
-                href="https://tailwindcss.com/"
-                target="_blank"
-                className="float-chain"
-                style={{ animationDelay: "0.5s" }}>
-                <SiTailwindcss
-                  key="tailwind"
-                  className="text-cyan-400 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
-                />
-              </a>
-              <a
-                data-aos="fade"
-                data-aos-duration="1500"
-                href="https://firebase.google.com/"
-                target="_blank"
-                className="float-chain"
-                style={{ animationDelay: "1s" }}>
-                <SiFirebase
-                  key="firebase"
-                  className="text-yellow-500 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
-                />
-              </a>
-              <a
-                data-aos="fade"
-                data-aos-duration="2000"
-                href="https://daisyui.com/"
-                target="_blank"
-                className="float-chain"
-                style={{ animationDelay: "1.5s" }}>
-                <SiTypescript
-                  key="daisyui"
-                  className="text-blue-600 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
-                />
-              </a>
-              <a
-                data-aos="fade"
-                data-aos-duration="2500"
-                href="https://www.mongodb.com/"
-                target="_blank"
-                className="float-chain"
-                style={{ animationDelay: "2s" }}>
-                <SiMongodb
-                  key="mongodb"
-                  className="text-green-500 xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
-                />
-              </a>
-              <a
-                data-aos="fade"
-                data-aos-duration="3000"
-                href="https://github.com/motdotla/dotenv"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="float-chain"
-                style={{ color: "#ECD53F", animationDelay: "2.5s" }}>
-                <SiDotenv
-                  key="dotenv"
-                  className="xl:size-9 lg:size-8 md:size-8 size-8 border rounded-full p-1"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
