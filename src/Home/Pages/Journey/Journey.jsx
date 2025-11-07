@@ -92,7 +92,7 @@ const Journey = () => {
             icon={<FaHourglassStart />}
           >
             <h1 className="text-lg md:text-[20px] sm:text-[22px] font-semibold text-start">
-              Start Explore
+              Start Exploring
             </h1>
             <p className="text-sm md:text-xs sm:text-xs mt-1 text-start">
               In January 2025, I immersed myself in the world of web development
