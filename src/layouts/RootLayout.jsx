@@ -1,14 +1,19 @@
-import React, { useEffect, useState, createContext } from "react";
+import { useEffect, useState, createContext } from "react";
 import { Outlet } from "react-router";
 import Navbar from "../Navbaer/Navbar";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Lenis from "@studio-freight/lenis";
 import FloatingBtn from "../Home/FloatinBtn/FloatingBtn";
+import Loader from "../shared/loader/Loader";
+
+
+
 
 export const LenisContext = createContext  (null);
 
 const RootLayout = () => {
+  const [Loading, setLoading] = useState(true);
   const [lenis, setLenis] = useState(null);
 
   useEffect(() => {
@@ -31,11 +36,19 @@ const RootLayout = () => {
     }
     requestAnimationFrame(raf);
 
+    setTimeout(() => setLoading(false), 5000);
+
     return () => {
       lenisInstance.destroy();
       setLenis(null);
     };
   }, []);
+
+  
+
+  if (Loading) {
+    return <Loader/>;
+  }
 
   return (
     <LenisContext.Provider value={lenis}>
